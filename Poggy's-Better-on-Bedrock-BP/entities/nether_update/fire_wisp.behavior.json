@@ -63,21 +63,21 @@
 			},
 			"minecraft:movement": {
 				"value": 0.01
-			  },
-			  "minecraft:movement.basic": {
+			},
+			"minecraft:movement.basic": {
 				"max_turn": 30
-			  },
-			  "minecraft:navigation.float": {
+			},
+			"minecraft:navigation.float": {
 				"can_path_over_water": true
-			  },
-			  "minecraft:behavior.float_wander": {
+			},
+			"minecraft:behavior.float_wander": {
 				"priority": 2,
 				"xz_dist": 2,
 				"y_dist": 2,
 				"must_reach": true
-			  },
-			  "minecraft:can_fly": {
-			  },
+			},
+			"minecraft:can_fly": {
+			},
 			"minecraft:health": {
 				"value": 8,
 				"max": 8

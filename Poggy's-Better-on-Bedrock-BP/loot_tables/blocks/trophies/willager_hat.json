@@ -15,20 +15,16 @@
 								"max": 1
 							}
 						},
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                "§r§aWear this hat or place it as a trophy.",
-                                "§r§5Legendary Trophy"
-                            ]
-                        }
+						{
+							"function": "set_lore",
+							"lore": [
+								"§r§aWear this hat or place it as a trophy.",
+								"§r§5Legendary Trophy"
+							]
+						}
 					]
 				}
-
 			]
-
 		}
-
 	]
-
 }

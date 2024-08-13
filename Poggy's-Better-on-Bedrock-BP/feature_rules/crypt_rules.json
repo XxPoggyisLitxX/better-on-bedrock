@@ -11,18 +11,18 @@
 				{
 					"all_of": [
 						{
-						"any_of": [
-							{
-							"test": "has_biome_tag",
-							"operator": "==",
-							"value": "overworld"
-							},
-							{
-							"test": "has_biome_tag",
-							"operator": "==",
-							"value": "overworld_generation"
-							}
-						]
+							"any_of": [
+								{
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "overworld"
+								},
+								{
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "overworld_generation"
+								}
+							]
 						},
 						{
 							"test": "has_biome_tag",
@@ -42,8 +42,8 @@
 			"scatter_chance": {
 				"numerator": 1,
 				"denominator": 8000
-			  },
-			  "iterations": 1,
+			},
+			"iterations": 1,
 			"x": 1,
 			"y": "query.heightmap(variable.worldx, variable.worldz)",
 			"z": 1

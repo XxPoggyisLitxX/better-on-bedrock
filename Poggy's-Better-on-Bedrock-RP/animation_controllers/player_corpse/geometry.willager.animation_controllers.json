@@ -6,16 +6,16 @@
 				"default": {
 					"animations": ["general"],
 					"transitions": [
-						{"default": "q.modified_move_speed > 0.05"},
-						{"casting": "q.is_casting"}
+						{ "default": "q.modified_move_speed > 0.05" },
+						{ "casting": "q.is_casting" }
 					],
 					"blend_transition": 0.2
 				},
 				"walking": {
 					"animations": ["move"],
 					"transitions": [
-						{"default": "q.modified_move_speed < 0.05"},
-						{"casting": "q.is_casting"}
+						{ "default": "q.modified_move_speed < 0.05" },
+						{ "casting": "q.is_casting" }
 					],
 					"blend_transition": 0.2
 				},
@@ -27,7 +27,7 @@
 						}
 					],
 					"transitions": [
-						{"default": "!q.is_casting"}
+						{ "default": "!q.is_casting" }
 					],
 					"blend_transition": 0.2
 				}

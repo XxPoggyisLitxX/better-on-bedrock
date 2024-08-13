@@ -49,13 +49,13 @@
 			}
 		},
 		"events": {
-		"equip":{
-			"run_command": {
-				"command": [
-					"playsound armor.equip_iron @p"
-				]
+			"equip": {
+				"run_command": {
+					"command": [
+						"playsound armor.equip_iron @p"
+					]
+				}
 			}
-		}
 		}
 	}
 }

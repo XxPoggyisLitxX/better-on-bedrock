@@ -1,5 +1,4 @@
 {
-
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
@@ -22,12 +21,12 @@
 				}
 			}
 		},
-        "events": {
-			"looted_uncommon_lootbag":{
+		"events": {
+			"looted_uncommon_lootbag": {
 				"run_command": {
 					"command": ["clear @p better_on_bedrock:rare_lootbag 0 1"]
 				}
 			}
 		}
-		}
 	}
+}

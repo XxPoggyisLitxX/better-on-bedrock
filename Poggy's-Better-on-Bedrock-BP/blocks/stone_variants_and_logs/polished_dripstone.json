@@ -16,7 +16,7 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},
-            "minecraft:unit_cube": {},
+			"minecraft:unit_cube": {},
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "dripstone_stairs",

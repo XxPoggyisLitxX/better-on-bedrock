@@ -1,5 +1,4 @@
 {
-
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
@@ -16,5 +15,5 @@
 				"texture": "tulip_pot_item"
 			}
 		}
-		}
 	}
+}

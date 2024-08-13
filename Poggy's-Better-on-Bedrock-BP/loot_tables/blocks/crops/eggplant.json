@@ -1,6 +1,6 @@
 {
 	"pools": [
-        {
+		{
 			"rolls": 2,
 			"entries": [
 				{
@@ -17,7 +17,7 @@
 						}
 					]
 				},
-                {
+				{
 					"type": "item",
 					"name": "better_on_bedrock:eggplant_food",
 					"weight": 100,
@@ -31,11 +31,7 @@
 						}
 					]
 				}
-
 			]
-
 		}
-
 	]
-
 }

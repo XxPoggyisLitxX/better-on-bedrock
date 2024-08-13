@@ -1,5 +1,4 @@
 {
-
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
@@ -13,12 +12,15 @@
 				"texture": "bounty_paper_open"
 			}
 		},
-        "events": {
-            "close_scroll":{
-                "run_command": {
-                    "command": ["replaceitem entity @p slot.weapon.mainhand 0 better_on_bedrock:quest_paper 1 0", "title @p actionbar Scroll Closed"]
-                }
-            }
-        }
+		"events": {
+			"close_scroll": {
+				"run_command": {
+					"command": [
+						"replaceitem entity @p slot.weapon.mainhand 0 better_on_bedrock:quest_paper 1 0",
+						"title @p actionbar Scroll Closed"
+					]
+				}
+			}
+		}
 	}
 }

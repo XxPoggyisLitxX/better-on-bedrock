@@ -31,41 +31,41 @@
 				"speed_multiplier": 0.8
 			}
 		},
-        "component_groups": {
-            "despawn":{
-                "minecraft:instant_despawn": {
-                    "remove_child_entities": false
-                }
-            },
-            "timer": {
-                "minecraft:timer": {
-                    "time": 2,
-                    "looping": false,
-                    "time_down_event": {
-                        "event": "example:foo",
-                        "target": "self"
-                    }
-                }
-            }
-        },
-        "events": {
-            "example:foo": {
-                "add": {
-                    "component_groups": [
-                        "despawn"
-                    ]
-                }
-            },
-            "minecraft:entity_spawned": {
-                "add": {
-                    "component_groups": [
-                        "timer"
-                    ]
-                },
-                "run_command": {
-                    "command": ["particle better_on_bedrock:ambience_2 ~ ~ ~"]
-                }
-            }
-        }
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": false
+				}
+			},
+			"timer": {
+				"minecraft:timer": {
+					"time": 2,
+					"looping": false,
+					"time_down_event": {
+						"event": "example:foo",
+						"target": "self"
+					}
+				}
+			}
+		},
+		"events": {
+			"example:foo": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"timer"
+					]
+				},
+				"run_command": {
+					"command": ["particle better_on_bedrock:ambience_2 ~ ~ ~"]
+				}
+			}
+		}
 	}
 }

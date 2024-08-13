@@ -1,11 +1,16 @@
-import { world,   ItemStack,  DynamicPropertiesDefinition,  BlockType, ScreenDisplay, ItemTypes } from "@minecraft/server"
-import "./hardcore_ui/hardcore_selection_screen.js"
+import {
+	BlockType,
+	DynamicPropertiesDefinition,
+	ItemStack,
+	ItemTypes,
+	ScreenDisplay,
+	world,
+} from "@minecraft/server";
+import "./hardcore_ui/hardcore_selection_screen.js";
 
 import { stdout } from "./player_corpse/ghost_effect.js";
 import * as Quests from "./bounty_system/constants/Quests.js";
 import * as QuestStatus from "./bounty_system/constants/QuestStatus.js";
-
-
 
 /*world.afterEvents.playerSpawn.subscribe(
   ({ player }) => {
@@ -30,10 +35,10 @@ world.beforeEvents.Chat.subscribe(
         if (args[0] == "reset") {
           if (args[1] == "bounties") {
             for (const player of world.getAllPlayers()) {
-              
+
               player.removeDynamicProperty( "bounties" );
             };
-            
+
             player.sendMessage("Bounties reset!");
           } else if (args[1] == "quests") {
             try {
@@ -44,7 +49,7 @@ world.beforeEvents.Chat.subscribe(
                 player.removeDynamicProperty( "quests4" );
                 player.removeDynamicProperty( "quests5" );
                 player.removeDynamicProperty( "quests6" );
-        
+
                 player.setDynamicProperty(
                   "tiersCompleted",
                   0,
@@ -141,11 +146,11 @@ world.beforeEvents.Chat.subscribe((chatEvent) => {
 /*
       case "!dev reset bounties":
         for (const player of world.getAllPlayers()) player.removeDynamicProperty( "bounties" );
-        
+
         chatEvent.sender.sendMessage("!");
       break;
       case "!dev reset quests":
-        
+
       break;
       case "!block_info":
         chatEvent.sender.sendMessage('§eGet info about a selected block. §cSyntax:"!block_info miners_bench", "!block_info forge_table", "!block_info waystone".')

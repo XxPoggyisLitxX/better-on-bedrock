@@ -16,7 +16,7 @@
 				"explosion_resistance": 30
 			},
 			"tag:stone": {},
-            "minecraft:unit_cube": {},
+			"minecraft:unit_cube": {},
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "chiseled_polished_andisite",

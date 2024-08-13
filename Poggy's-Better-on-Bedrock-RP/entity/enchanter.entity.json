@@ -28,8 +28,7 @@
 			},
 			"render_controllers": [{
 				"controller.render.default": "!q.is_on_ground  || q.is_on_ground || q.mark_variant == 0 || q.mark_variant == 1"
-			},
-			{
+			}, {
 				"controller.render.enchanter": "q.mark_variant == 1"
 			}],
 			"spawn_egg": {

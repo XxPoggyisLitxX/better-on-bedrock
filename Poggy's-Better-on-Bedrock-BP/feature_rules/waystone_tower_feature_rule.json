@@ -19,11 +19,11 @@
 					{
 						"test": "has_biome_tag",
 						"value": "custom_vanilla_forrest"
-					  },
-					  {
+					},
+					{
 						"test": "has_biome_tag",
 						"value": "new_hills"
-					  },
+					},
 					{
 						"test": "has_biome_tag",
 						"value": "taiga"
@@ -48,7 +48,7 @@
 			"iterations": 1,
 
 			"x": 0,
-        	"z": 0,
+			"z": 0,
 			"y": "query.heightmap(variable.worldx, variable.worldz) + - 2"
 		}
 	}

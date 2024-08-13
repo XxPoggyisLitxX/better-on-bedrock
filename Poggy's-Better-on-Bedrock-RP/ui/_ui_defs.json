@@ -9,10 +9,9 @@
 		"ui/poggy/npc_screens/scroll_box_screen.json",
 		"ui/poggy/npc_screens/teacher_screen.json",
 		"ui/poggy/npc_screens/vanilla_screen.json",
-				"ui/long_form_custom_1.json",
-				"ui/long_form_custom_2.json",
-				"ui/custom_form_custom_1.json",
-				"ui/bg.json"
-		
+		"ui/long_form_custom_1.json",
+		"ui/long_form_custom_2.json",
+		"ui/custom_form_custom_1.json",
+		"ui/bg.json"
 	]
 }

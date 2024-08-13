@@ -5,7 +5,7 @@
 			"identifier": "better_on_bedrock:bluegrod_top"
 		},
 		"components": {
-		"tag:bluegrod_top": {},
+			"tag:bluegrod_top": {},
 			"minecraft:loot": "loot_tables/blocks/loot_tables/empty.json",
 			"minecraft:collision_box": false,
 			"minecraft:destructible_by_mining": {
@@ -19,7 +19,7 @@
 					}
 				]
 			},
-			"minecraft:selection_box":{
+			"minecraft:selection_box": {
 				"origin": [
 					-3,
 					0,
@@ -43,18 +43,18 @@
 					"face_dimming": false
 				}
 			},
-            "minecraft:on_player_destroyed": {
-                "event": "air",
-                "target": "self"
-            },
+			"minecraft:on_player_destroyed": {
+				"event": "air",
+				"target": "self"
+			},
 			"minecraft:map_color": "#7d7d7d"
 		},
-        "events": {
-            "air": {
-                "run_command": {
+		"events": {
+			"air": {
+				"run_command": {
 					"command": ["setblock ~ ~-1 ~ air 0 destroy"]
-				  }
-            }
-        }
+				}
+			}
+		}
 	}
-	}
+}

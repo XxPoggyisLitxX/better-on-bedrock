@@ -6,14 +6,14 @@
 				"default": {
 					"animations": ["idle"],
 					"transitions": [
-						{"fly": "q.is_on_ground == false"}
+						{ "fly": "q.is_on_ground == false" }
 					],
 					"blend_transition": 0.2
 				},
 				"fly": {
 					"animations": ["fly"],
 					"transitions": [
-						{"default": "q.is_on_ground == true"}
+						{ "default": "q.is_on_ground == true" }
 					],
 					"blend_transition": 0.2
 				}

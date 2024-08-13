@@ -6,39 +6,45 @@
 				"default": {
 					"animations": ["default"],
 					"transitions": [
-						{"attack": "q.variant == 1"},
-						{"invis": "q.variant == 2"},
-						{"fireball": "q.has_target && q.variant == 4"}
+						{ "attack": "q.variant == 1" },
+						{ "invis": "q.variant == 2" },
+						{ "fireball": "q.has_target && q.variant == 4" }
 					]
 				},
 				"attack": {
 					"animations": ["attack"],
 					"transitions": [
-						{"default": "(q.is_on_ground || !q.is_on_ground) && q.variant == 0"},
-						{"invis": "q.variant == 2"},
-						{"fireball": "q.has_target && q.variant == 4"}
+						{
+							"default": "(q.is_on_ground || !q.is_on_ground) && q.variant == 0"
+						},
+						{ "invis": "q.variant == 2" },
+						{ "fireball": "q.has_target && q.variant == 4" }
 					]
 				},
 				"invis": {
 					"animations": ["tp_out"],
 					"sound_effects": [
-						{"effect": ""}
+						{ "effect": "" }
 					],
 					"transitions": [
-						{"default": "(q.is_on_ground || !q.is_on_ground) && q.variant == 0"},
-						{"attack": "q.variant == 1"},
-						{"fireball": "q.has_target && q.variant == 4"}
+						{
+							"default": "(q.is_on_ground || !q.is_on_ground) && q.variant == 0"
+						},
+						{ "attack": "q.variant == 1" },
+						{ "fireball": "q.has_target && q.variant == 4" }
 					]
 				},
 				"fireball": {
 					"animations": ["fireball"],
 					"sound_effects": [
-						{"effect": ""}
+						{ "effect": "" }
 					],
 					"transitions": [
-						{"default": "(q.is_on_ground || !q.is_on_ground) && q.variant == 0"},
-						{"attack": "q.variant == 1"},
-						{"invis": "q.variant == 2"}
+						{
+							"default": "(q.is_on_ground || !q.is_on_ground) && q.variant == 0"
+						},
+						{ "attack": "q.variant == 1" },
+						{ "invis": "q.variant == 2" }
 					]
 				}
 			}

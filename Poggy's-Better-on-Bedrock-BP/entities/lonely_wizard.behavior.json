@@ -25,7 +25,7 @@
 				"display_name": "Lonely Wizard",
 				"table": "trading/lone-wizard-trade-table.json",
 				"new_screen": true
-			  },
+			},
 			"minecraft:movement.basic": {},
 			"minecraft:jump.static": {},
 			"minecraft:navigation.walk": {

@@ -1,5 +1,4 @@
 {
-
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
@@ -12,12 +11,12 @@
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": false,
-            "minecraft:display_name": {
-                "value": "§bMusic Disc"
-            },
+			"minecraft:display_name": {
+				"value": "§bMusic Disc"
+			},
 			"minecraft:icon": {
 				"texture": "record_travels"
 			}
 		}
-		}
 	}
+}

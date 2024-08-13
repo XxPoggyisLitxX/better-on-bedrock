@@ -16,29 +16,29 @@
 				"explosion_resistance": 0
 			},
 			"minecraft:unit_cube": {},
-			"minecraft:selection_box":true,
+			"minecraft:selection_box": true,
 			"minecraft:material_instances": {
 				"up": {
 					"texture": "end_nylium_top",
 					"render_method": "opaque"
 				},
-                "north": {
+				"north": {
 					"texture": "end_nylium_top",
 					"render_method": "opaque"
 				},
-                "down": {
+				"down": {
 					"texture": "end_nylium_top",
 					"render_method": "opaque"
 				},
-                "east": {
+				"east": {
 					"texture": "end_nylium_top",
 					"render_method": "opaque"
 				},
-                "south": {
+				"south": {
 					"texture": "end_nylium_top",
 					"render_method": "opaque"
 				},
-                "west": {
+				"west": {
 					"texture": "end_nylium_top",
 					"render_method": "opaque"
 				}

@@ -47,7 +47,7 @@
 			}
 		},
 		"events": {
-			"despawn_backpack":{
+			"despawn_backpack": {
 				"add": {
 					"component_groups": [
 						"despawn"
@@ -67,7 +67,6 @@
 			"minecraft:interact": {
 				"interactions": [
 					{
-						
 						"on_interact": {
 							"filters": {
 								"test": "has_equipment",

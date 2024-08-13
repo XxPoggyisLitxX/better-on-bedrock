@@ -38,7 +38,7 @@
 				"seconds_to_destroy": 8
 			},
 			"tag:stone": {},
-			
+
 			"minecraft:geometry": "geometry.custom_stairs",
 			"minecraft:part_visibility": {
 				"conditions": {

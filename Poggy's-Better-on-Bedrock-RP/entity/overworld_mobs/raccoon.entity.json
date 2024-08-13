@@ -22,8 +22,8 @@
 			"scripts": {
 				"animate": [
 					"basic",
-					{"baby": "q.is_baby"},
-					{"look_at_target": "!q.variant == 9"}
+					{ "baby": "q.is_baby" },
+					{ "look_at_target": "!q.variant == 9" }
 				]
 			},
 			"particle_effects": {

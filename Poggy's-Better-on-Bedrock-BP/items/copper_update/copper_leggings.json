@@ -50,7 +50,7 @@
 			}
 		},
 		"events": {
-			"equip":{
+			"equip": {
 				"run_command": {
 					"command": [
 						"playsound armor.equip_iron @p"

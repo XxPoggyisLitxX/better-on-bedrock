@@ -8,7 +8,7 @@
 			//Basic components
 			"minecraft:destroy_time": 10,
 			"minecraft:unit_cube": {},
-            "minecraft:display_name": "Silver Ore",
+			"minecraft:display_name": "Silver Ore",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "silver_ore",

@@ -28,14 +28,13 @@
 			}
 		},
 		"components": {
-			
 			"tag:stone": {},
 			"minecraft:block_light_filter": 0,
 			"minecraft:map_color": "#52221D",
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 8
 			},
-			
+
 			"minecraft:geometry": "geometry.custom_stairs",
 			"minecraft:material_instances": {
 				"*": {

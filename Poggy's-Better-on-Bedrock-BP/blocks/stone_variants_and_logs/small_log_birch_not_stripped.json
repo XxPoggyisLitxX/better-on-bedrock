@@ -7,7 +7,7 @@
 				"category": "construction"
 			},
 			"properties": {
-				"better_on_bedrock:stripped":[
+				"better_on_bedrock:stripped": [
 					"false",
 					"true"
 				]
@@ -17,7 +17,6 @@
 			{
 				"condition": "query.block_property('better_on_bedrock:stripped') == 'false'",
 				"components": {
-					
 					"minecraft:destructible_by_mining": {
 						"seconds_to_destroy": 1
 					},
@@ -42,7 +41,6 @@
 			{
 				"condition": "query.block_property('better_on_bedrock:stripped') == 'true'",
 				"components": {
-					
 					"minecraft:destructible_by_mining": {
 						"seconds_to_destroy": 1
 					},
@@ -69,33 +67,33 @@
 		},
 		"components": {
 			"minecraft:collision_box": {
-                "origin": [
-                    -5,
-                    0,
-                    -5
-                ],
-                "size": [
-                    10,
-                    16,
-                    10
-                ]
-            },
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					16,
+					10
+				]
+			},
 			"tag:wood": {},
-            "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 1
-            },
-            "minecraft:selection_box":{
-                "origin": [
-                    -5,
-                    0,
-                    -5
-                ],
-                "size": [
-                    10,
-                    16,
-                    10
-                ]
-            },
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					16,
+					10
+				]
+			},
 			"minecraft:on_interact": {
 				"condition": "q.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:wooden_axe') || q.is_item_name_any('slot.weapon.mainhand', 0, 'better_on_bedrock:stone_axe') || q.is_item_name_any('slot.weapon.mainhand', 0, 'better_on_bedrock:iron_axe') || q.is_item_name_any('slot.weapon.mainhand', 0, 'better_on_bedrock:diamond_axe') || q.is_item_name_any('slot.weapon.mainhand', 0, 'better_on_bedrock:netherite_axe')",
 				"event": "strip_log",

@@ -28,31 +28,31 @@
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 2,
 				"entity_types": [
-				  {
-					"filters": {
-					  "test": "is_family",
-					  "subject": "other",
-					  "value": "player"
-					},
-					"max_dist": 6
-				  }
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "player"
+						},
+						"max_dist": 6
+					}
 				],
 				"must_see": true
-			  },
-			  "minecraft:timer": {
+			},
+			"minecraft:timer": {
 				"time": 5,
 				"looping": true,
 				"time_down_event": {
 					"event": "summon_dripstone",
 					"target": "self"
 				}
-			  },
+			},
 			"minecraft:movement.basic": {},
 			"minecraft:jump.static": {},
 			"minecraft:navigation.walk": {
 				"avoid_water": true
 			},
-			
+
 			"minecraft:behavior.random_stroll": {
 				"priority": 3,
 				"speed_multiplier": 0.8

@@ -15,13 +15,13 @@
 				"block": "better_on_bedrock:blueberry_block"
 			},
 			"minecraft:foil": false,
-            "minecraft:food": {
+			"minecraft:food": {
 				"nutrition": 1,
 				"saturation_modifier": "normal",
 				"can_always_eat": false
 			},
-            "minecraft:use_duration": 1.6,
-            "minecraft:use_animation": "eat",
+			"minecraft:use_duration": 1.6,
+			"minecraft:use_animation": "eat",
 			"minecraft:icon": {
 				"texture": "blueberries"
 			}

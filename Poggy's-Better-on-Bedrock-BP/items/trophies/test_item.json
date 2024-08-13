@@ -1,5 +1,4 @@
 {
-
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
@@ -11,10 +10,9 @@
 			"minecraft:icon": {
 				"texture": "soul_star"
 			},
-            "minecraft:display_name": {
-                "value": "item.soul_star.name"
-            }
-		}
-     
+			"minecraft:display_name": {
+				"value": "item.soul_star.name"
+			}
 		}
 	}
+}

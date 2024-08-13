@@ -12,7 +12,7 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 0
 			},
-			"minecraft:selection_box":true,
+			"minecraft:selection_box": true,
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "end_shroom",

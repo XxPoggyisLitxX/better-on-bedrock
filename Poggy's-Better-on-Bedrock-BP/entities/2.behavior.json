@@ -32,7 +32,7 @@
 				"value": 100,
 				"maximum": 100
 			},
-			
+
 			"minecraft:push_through": {
 				"value": 1
 			}
@@ -61,25 +61,23 @@
 			}
 		},
 		"events": {
-			"explode":{
-
-						"add": {
-							"component_groups": [
-								"explode"
-							]
-						}
+			"explode": {
+				"add": {
+					"component_groups": [
+						"explode"
+					]
+				}
 			},
 			"minecraft:entity_spawned": {
-				
-						"sequence": [
-							{
-								"add": {
-									"component_groups": [
-										"timer"
-									]
-								}
-							}
-						]
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"timer"
+							]
+						}
+					}
+				]
 			}
 		}
 	}

@@ -62,8 +62,10 @@
 		},
 		"events": {
 			"tell_player_info": {
-				"run_command":{
-					"command": ["tellraw @p { \"rawtext\": [ { \"text\": \"§2\"}, {\"selector\": \"@a\"}, { \"text\": \" §gHas Entered The Enchanted Tower And Found This Long Lost Trophy!\"} ] } "]
+				"run_command": {
+					"command": [
+						"tellraw @p { \"rawtext\": [ { \"text\": \"§2\"}, {\"selector\": \"@a\"}, { \"text\": \" §gHas Entered The Enchanted Tower And Found This Long Lost Trophy!\"} ] } "
+					]
 				}
 			},
 			"wiki:set_rotation": {

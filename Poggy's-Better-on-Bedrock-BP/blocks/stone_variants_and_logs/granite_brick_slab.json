@@ -16,8 +16,6 @@
 			}
 		},
 		"components": {
-			
-			
 			"minecraft:on_player_placing": {
 				"event": "up",
 				"target": "self",

@@ -3,19 +3,19 @@
 		{
 			"rolls": 1,
 			"conditions": [
-                {
-                    "condition": "match_tool",
-                    "item": "better_on_bedrock:iron_pickaxe",
-                    "count": 1,
-                    "enchantments": [
-                        {
-                            "fortune": {
-                                "level": 1
-                            }
-                        }
-                    ]
-                }
-            ],
+				{
+					"condition": "match_tool",
+					"item": "better_on_bedrock:iron_pickaxe",
+					"count": 1,
+					"enchantments": [
+						{
+							"fortune": {
+								"level": 1
+							}
+						}
+					]
+				}
+			],
 			"entries": [
 				{
 					"type": "item",
@@ -31,11 +31,7 @@
 						}
 					]
 				}
-
 			]
-
 		}
-
 	]
-
 }

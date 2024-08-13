@@ -12,14 +12,14 @@
 				"has_gravity": true,
 				"has_collision": true
 			},
-            "minecraft:damage_sensor": {
-                "triggers": [
-                    {
-                        "cause": "all",
-                        "deals_damage": false
-                    }
-                ]
-            },
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
 			"minecraft:pushable": {
 				"is_pushable": false
 			},

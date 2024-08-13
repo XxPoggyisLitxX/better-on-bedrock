@@ -26,12 +26,20 @@
 					"scale": 0
 				},
 				"leftarm": {
-					"rotation": ["math.cos(query.life_time * 763.4) * 14.3239 - this", "-this", "-135.0 - this"],
+					"rotation": [
+						"math.cos(query.life_time * 763.4) * 14.3239 - this",
+						"-this",
+						"-135.0 - this"
+					],
 					"position": [-3, 0, 0],
 					"scale": 1
 				},
 				"rightarm": {
-					"rotation": ["math.cos(query.life_time * 763.4) * 14.3239 - this", "-this", "135.0 - this"],
+					"rotation": [
+						"math.cos(query.life_time * 763.4) * 14.3239 - this",
+						"-this",
+						"135.0 - this"
+					],
 					"position": [3, 0, 0],
 					"scale": 1
 				},

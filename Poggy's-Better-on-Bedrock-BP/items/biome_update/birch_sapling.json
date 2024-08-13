@@ -1,6 +1,5 @@
 //birch_sapling
 {
-
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
@@ -13,9 +12,9 @@
 			"minecraft:icon": {
 				"texture": "birch_sapling"
 			},
-            "minecraft:block_placer": {
-                "block": "better_on_bedrock:birch_sapling"
-            }
+			"minecraft:block_placer": {
+				"block": "better_on_bedrock:birch_sapling"
+			}
 		}
 	}
 }

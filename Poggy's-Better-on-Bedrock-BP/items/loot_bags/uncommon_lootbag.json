@@ -1,5 +1,4 @@
 {
-
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
@@ -12,18 +11,17 @@
 			"minecraft:icon": {
 				"texture": "uncommon_lootbag"
 			},
-			"minecraft:cooldown":{
+			"minecraft:cooldown": {
 				"category": "lootbags",
 				"duration": 3
 			}
-			
 		},
-        "events": {
-			"looted_uncommon_lootbag":{
+		"events": {
+			"looted_uncommon_lootbag": {
 				"run_command": {
 					"command": ["function common_lootbag"]
 				}
 			}
 		}
-		}
 	}
+}

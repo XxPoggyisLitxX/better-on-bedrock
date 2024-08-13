@@ -6,22 +6,26 @@
 				"default": {
 					"animations": ["idle"],
 					"transitions": [
-						{"summon_dripstone": "q.is_casting"},
-						{"move": "q.modified_move_speed >= 0.05"}
+						{ "summon_dripstone": "q.is_casting" },
+						{ "move": "q.modified_move_speed >= 0.05" }
 					]
 				},
 				"summon_dripstone": {
 					"animations": ["summon_dripstone"],
 					"transitions": [
-						{"default": "q.modified_move_speed <= 0.05 && !q.is_casting"},
-						{"move": "q.modified_move_speed >= 0.05"}
+						{
+							"default": "q.modified_move_speed <= 0.05 && !q.is_casting"
+						},
+						{ "move": "q.modified_move_speed >= 0.05" }
 					]
 				},
 				"move": {
 					"animations": ["move"],
 					"transitions": [
-						{"default": "q.modified_move_speed <= 0.05 && !q.is_casting"},
-						{"summon_dripstone": "q.is_casting"}
+						{
+							"default": "q.modified_move_speed <= 0.05 && !q.is_casting"
+						},
+						{ "summon_dripstone": "q.is_casting" }
 					]
 				}
 			}

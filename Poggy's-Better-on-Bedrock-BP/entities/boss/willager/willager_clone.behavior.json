@@ -8,11 +8,11 @@
 			"is_experimental": false
 		},
 		"component_groups": {
-            "despawn":{
-                "minecraft:instant_despawn": {
-                    "remove_child_entities": true
-                }
-            },
+			"despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			},
 			"minecraft:celebrate": {
 				"minecraft:behavior.celebrate": {
 					"priority": 5,
@@ -123,7 +123,7 @@
 								"base_delay": 0.1,
 								"delay_per_summon": 0,
 								"num_entities_spawned": 1,
-									"summon_cap": 1,
+								"summon_cap": 1,
 								"entity_type": "",
 								"size": 0.5,
 								"entity_lifespan": 1.1,
@@ -168,23 +168,23 @@
 					}
 				]
 			},
-            "minecraft:damage_sensor": {
-                "triggers": [
-                    {
-                        "cause": "attack",
-                        "deals_damage": true,
-                        "on_damage": {
-                            "event": "better_on_bedrock:despawn",
-                            "target": "self"
-                        },
-                        "on_damage_sound_event": "prepare.wololo"
-                    },
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "attack",
+						"deals_damage": true,
+						"on_damage": {
+							"event": "better_on_bedrock:despawn",
+							"target": "self"
+						},
+						"on_damage_sound_event": "prepare.wololo"
+					},
 					{
 						"cause": "entity_explosion",
 						"deals_damage": false
 					}
-                ]
-            },
+				]
+			},
 			"minecraft:behavior.avoid_mob_type": {
 				"priority": 5,
 				"entity_types": [
@@ -294,13 +294,13 @@
 					"component_groups": ["minecraft:celebrate"]
 				}
 			},
-            "better_on_bedrock:despawn":{
-                "add": {
-                    "component_groups": [
-                        "despawn"
-                    ]
-                }
-            },
+			"better_on_bedrock:despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			},
 			"minecraft:stop_celebrating": {
 				"remove": {
 					"component_groups": ["minecraft:celebrate"]

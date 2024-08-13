@@ -47,7 +47,7 @@
 					"event_name": "ambient.in.raid"
 				}
 			},
-			"better_on_bedrock:act_as_clone":{
+			"better_on_bedrock:act_as_clone": {
 				"minecraft:movement": {
 					"value": 0.5
 				},
@@ -144,7 +144,7 @@
 								{
 									"shape": "circle",
 									"target": "self",
-									
+
 									"base_delay": 0.1,
 									"delay_per_summon": 0,
 									"num_entities_spawned": 15,
@@ -412,7 +412,7 @@
 								}
 							]
 						},
-								
+
 						{
 							"min_activation_range": 3,
 							"weight": 7,
@@ -431,7 +431,6 @@
 									"size": 22,
 									"entity_lifespan": 1.1
 								}
-								
 							]
 						},
 						{
@@ -452,7 +451,6 @@
 									"size": 0,
 									"entity_lifespan": 1.1
 								}
-								
 							]
 						},
 						{
@@ -473,7 +471,7 @@
 									"sound_event": "prepare.summon"
 								}
 							]
-						},///better_on_bedrock:willager_target_circle
+						}, ///better_on_bedrock:willager_target_circle
 						{
 							"weight": 2,
 							"cooldown_time": 1,
@@ -496,17 +494,15 @@
 					]
 				}
 			}
-			
 		},
 		"components": {
 			"minecraft:experience_reward": {
 				"on_death": "3000"
 			},
-			
+
 			"minecraft:on_death": {
 				"event": "toast",
 				"target": "self"
-
 			},
 			"minecraft:damage_sensor": {
 				"triggers": [
@@ -517,7 +513,13 @@
 				]
 			},
 			"minecraft:type_family": {
-				"family": ["evocation_illager", "monster", "illager", "mob", "willager"]
+				"family": [
+					"evocation_illager",
+					"monster",
+					"illager",
+					"mob",
+					"willager"
+				]
 			},
 			"minecraft:breathable": {
 				"total_supply": 15,
@@ -875,7 +877,6 @@
 								"size": 0,
 								"entity_lifespan": 1.1
 							}
-							
 						]
 					},
 					{
@@ -896,7 +897,6 @@
 								"size": 22,
 								"entity_lifespan": 1.1
 							}
-							
 						]
 					},
 					{
@@ -1112,15 +1112,20 @@
 					"component_groups": ["minecraft:celebrate"]
 				}
 			},
-			"toast":{
+			"toast": {
 				"run_command": {
-                    "command": ["title @p actionbar willager", "playsound epic_quest @p ~ ~ ~"]
-                }
+					"command": [
+						"title @p actionbar willager",
+						"playsound epic_quest @p ~ ~ ~"
+					]
+				}
 			},
 			"better_on_bedrock:despawn_clones": {
 				"run_command": {
-                    "command": ["event entity @e[type=better_on_bedrock:willager_clone] better_on_bedrock:despawn"]
-                },//willager
+					"command": [
+						"event entity @e[type=better_on_bedrock:willager_clone] better_on_bedrock:despawn"
+					]
+				}, //willager
 				"remove": {
 					"component_groups": [
 						"better_on_bedrock:act_as_clone"
@@ -1132,7 +1137,7 @@
 					]
 				}
 			},
-			"better_on_bedrock:act_as_clone":{
+			"better_on_bedrock:act_as_clone": {
 				"add": {
 					"component_groups": [
 						"better_on_bedrock:act_as_clone"

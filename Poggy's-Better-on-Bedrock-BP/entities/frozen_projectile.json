@@ -22,19 +22,19 @@
 			"minecraft:push_through": {
 				"value": 1
 			},
-            "minecraft:projectile": {
-                "destroy_on_hurt": true,
-                "gravity": 0.01,
-                "on_hit": {
-                    "definition_event": {
-                        "event_trigger": {
-                            "event": "explode",
-                            "target": "self"
-                        }
-                    }
-                },
-                "power": 2
-            }
+			"minecraft:projectile": {
+				"destroy_on_hurt": true,
+				"gravity": 0.01,
+				"on_hit": {
+					"definition_event": {
+						"event_trigger": {
+							"event": "explode",
+							"target": "self"
+						}
+					}
+				},
+				"power": 2
+			}
 		},
 		"component_groups": {
 			"explode": {

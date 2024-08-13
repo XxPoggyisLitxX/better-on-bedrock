@@ -8,25 +8,23 @@
 			"is_experimental": false
 		},
 		"component_groups": {
-				"dig": {
-				  "minecraft:transformation": {
+			"dig": {
+				"minecraft:transformation": {
 					"into": "better_on_bedrock:cured_villager",
 					"begin_transform_sound": "remedy",
 					"transformation_sound": "unfect",
 					"delay": {
-					  "value": 30,
-					  "block_assist_chance": 0.01,
-					  "block_radius": 4,
-					  "block_chance": 0.3,
-					  "block_types": [
-						"minecraft:bed",
-						"minecraft:iron_bars"
-					  ]
+						"value": 30,
+						"block_assist_chance": 0.01,
+						"block_radius": 4,
+						"block_chance": 0.3,
+						"block_types": [
+							"minecraft:bed",
+							"minecraft:iron_bars"
+						]
 					}
-		  
-				
-			  }
-			  },
+				}
+			},
 			"minecraft:celebrate": {
 				"minecraft:behavior.celebrate": {
 					"priority": 5,
@@ -354,25 +352,25 @@
 			},
 			"minecraft:interact": {
 				"interactions": {
-				  // Curing the villager
-				  "on_interact": {
-					"filters": {
-					  "all_of": [
-						{
-						  "test": "has_equipment",
-						  "domain": "hand",
-						  "subject": "other",
-						  "value": "golden_apple"
-						}
-					  ]
+					// Curing the villager
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"domain": "hand",
+									"subject": "other",
+									"value": "golden_apple"
+								}
+							]
+						},
+						"event": "converted",
+						"target": "self"
 					},
-					"event": "converted",
-					"target": "self"
-				  },
-				  "use_item": true,
-				  "interact_text": "action.interact.cure"
+					"use_item": true,
+					"interact_text": "action.interact.cure"
 				}
-			  },
+			},
 			"minecraft:physics": {},
 			"minecraft:pushable": {
 				"is_pushable": true,
@@ -380,13 +378,13 @@
 			}
 		},
 		"events": {
-			"converted" : {
+			"converted": {
 				"add": {
-				  "component_groups": [
-					"dig"
-				  ]
+					"component_groups": [
+						"dig"
+					]
 				}
-			  },
+			},
 			"minecraft:entity_spawned": {
 				"add": {
 					"component_groups": ["minecraft:default_targeting"]
@@ -394,7 +392,10 @@
 			},
 			"minecraft:spawn_as_patrol_follower": {
 				"add": {
-					"component_groups": ["minecraft:default_targeting", "minecraft:patrol_follower"]
+					"component_groups": [
+						"minecraft:default_targeting",
+						"minecraft:patrol_follower"
+					]
 				}
 			},
 			"minecraft:become_aggro": {
@@ -422,7 +423,10 @@
 			},
 			"minecraft:spawn_for_raid": {
 				"add": {
-					"component_groups": ["minecraft:default_targeting", "minecraft:raid_configuration"]
+					"component_groups": [
+						"minecraft:default_targeting",
+						"minecraft:raid_configuration"
+					]
 				}
 			},
 			"minecraft:spawn_as_illager_captain": {

@@ -1,5 +1,4 @@
 {
-
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
@@ -14,9 +13,12 @@
 			}
 		},
 		"events": {
-			"change_item":{
+			"change_item": {
 				"run_command": {
-					"command": ["replaceitem entity @p slot.weapon.mainhand 0 better_on_bedrock:bounty_paper_open 1 0 ",  "title @p actionbar Scroll Opened"]
+					"command": [
+						"replaceitem entity @p slot.weapon.mainhand 0 better_on_bedrock:bounty_paper_open 1 0 ",
+						"title @p actionbar Scroll Opened"
+					]
 				}
 			}
 		}

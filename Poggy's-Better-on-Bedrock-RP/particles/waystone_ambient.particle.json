@@ -47,12 +47,20 @@
 				"uv": {
 					"texture_width": 128,
 					"texture_height": 128,
-					"uv": ["variable.particle_random_3 < 0.5 ? Math.round(variable.particle_random_2 * 14) * 8 + 8 : Math.round(variable.particle_random_2 * 10) * 8", "variable.particle_random_3 < 0.5 ? 112 : 120"],
+					"uv": [
+						"variable.particle_random_3 < 0.5 ? Math.round(variable.particle_random_2 * 14) * 8 + 8 : Math.round(variable.particle_random_2 * 10) * 8",
+						"variable.particle_random_3 < 0.5 ? 112 : 120"
+					],
 					"uv_size": [8, 8]
 				}
 			},
 			"minecraft:particle_appearance_tinting": {
-				"color": ["variable.particle_random_3 * 0.54 + 0.36", "variable.particle_random_3 * 0.54 + 0.36", "variable.particle_random_3 * 0.6 + 0.4", "Math.clamp(v.opacity, 0, 1)"]
+				"color": [
+					"variable.particle_random_3 * 0.54 + 0.36",
+					"variable.particle_random_3 * 0.54 + 0.36",
+					"variable.particle_random_3 * 0.6 + 0.4",
+					"Math.clamp(v.opacity, 0, 1)"
+				]
 			}
 		}
 	}

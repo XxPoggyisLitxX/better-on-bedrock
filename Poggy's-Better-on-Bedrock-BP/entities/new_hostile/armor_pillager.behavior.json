@@ -403,7 +403,10 @@
 			},
 			"minecraft:spawn_for_raid": {
 				"add": {
-					"component_groups": ["minecraft:ranged_attack", "minecraft:raid_configuration"]
+					"component_groups": [
+						"minecraft:ranged_attack",
+						"minecraft:raid_configuration"
+					]
 				}
 			},
 			"minecraft:spawn_as_patrol_follower": {
@@ -413,7 +416,10 @@
 			},
 			"minecraft:spawn_as_illager_captain": {
 				"add": {
-					"component_groups": ["minecraft:ranged_attack", "minecraft:illager_squad_captain"]
+					"component_groups": [
+						"minecraft:ranged_attack",
+						"minecraft:illager_squad_captain"
+					]
 				}
 			},
 			"minecraft:promote_to_illager_captain": {
@@ -460,7 +466,10 @@
 			},
 			"minecraft:calm": {
 				"remove": {
-					"component_groups": ["minecraft:melee_attack", "minecraft:ranged_attack"]
+					"component_groups": [
+						"minecraft:melee_attack",
+						"minecraft:ranged_attack"
+					]
 				}
 			}
 		}

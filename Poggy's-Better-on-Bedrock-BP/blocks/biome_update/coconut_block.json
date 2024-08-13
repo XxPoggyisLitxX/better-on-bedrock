@@ -6,37 +6,37 @@
 			"is_experimental": true
 		},
 		"components": {
-            "minecraft:destructible_by_mining":{
-                "seconds_to_destroy": 1
-            },
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
 
-            "minecraft:loot": "loot_tables/blocks/coconut_nut.json",
+			"minecraft:loot": "loot_tables/blocks/coconut_nut.json",
 			//Basic components
 			"minecraft:geometry": "geometry.coconut",
-            "minecraft:display_name": "Coconut",
-			"minecraft:selection_box":{
+			"minecraft:display_name": "Coconut",
+			"minecraft:selection_box": {
 				"origin": [
 					-4,
 					0,
 					-4
-				  ],
-				  "size": [
+				],
+				"size": [
 					8,
 					8,
 					8
-				  ]
+				]
 			},
-			"minecraft:collision_box":{
+			"minecraft:collision_box": {
 				"origin": [
 					-4,
 					0,
 					-4
-				  ],
-				  "size": [
+				],
+				"size": [
 					8,
 					8,
 					8
-				  ]
+				]
 			},
 			"minecraft:material_instances": {
 				"coconut": {

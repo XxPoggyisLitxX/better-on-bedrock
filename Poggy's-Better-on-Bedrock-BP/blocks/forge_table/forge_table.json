@@ -44,15 +44,15 @@
 			//Basic components
 			"minecraft:destroy_time": 2,
 			"minecraft:geometry": "geometry.forge_table",
-            "minecraft:on_interact": {
-                "event": "null",
-                "target": "self"
-            },
-			        "minecraft:creative_category": {
-          "category": "construction",
-          "group": "construction"
-      },
-	  
+			"minecraft:on_interact": {
+				"event": "null",
+				"target": "self"
+			},
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "construction"
+			},
+
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "forge_table_top",
@@ -61,7 +61,6 @@
 			}
 		},
 		"events": {
-
 			"wiki:set_rotation": {
 				"set_block_property": {
 					"wiki:rotation": "(query.cardinal_facing_2d)"

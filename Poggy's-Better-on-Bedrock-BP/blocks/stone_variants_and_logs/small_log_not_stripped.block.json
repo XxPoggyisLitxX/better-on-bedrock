@@ -7,7 +7,7 @@
 				"category": "construction"
 			},
 			"properties": {
-				"better_on_bedrock:stripped":[
+				"better_on_bedrock:stripped": [
 					"false",
 					"true"
 				]
@@ -17,7 +17,6 @@
 			{
 				"condition": "query.block_property('better_on_bedrock:stripped') == 'false'",
 				"components": {
-					
 					"minecraft:destructible_by_mining": {
 						"seconds_to_destroy": 1
 					},
@@ -42,7 +41,6 @@
 			{
 				"condition": "query.block_property('better_on_bedrock:stripped') == 'true'",
 				"components": {
-					
 					"minecraft:destructible_by_mining": {
 						"seconds_to_destroy": 1
 					},
@@ -83,7 +81,7 @@
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 1
 			},
-			"minecraft:selection_box":{
+			"minecraft:selection_box": {
 				"origin": [
 					-5,
 					0,

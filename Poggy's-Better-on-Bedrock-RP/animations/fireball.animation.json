@@ -6,7 +6,11 @@
 			"animation_length": 0.29167,
 			"bones": {
 				"body": {
-					"rotation": ["query.camera_rotation(0)", "query.camera_rotation(1)", 0],
+					"rotation": [
+						"query.camera_rotation(0)",
+						"query.camera_rotation(1)",
+						0
+					],
 					"position": [0, 0, 0]
 				}
 			},

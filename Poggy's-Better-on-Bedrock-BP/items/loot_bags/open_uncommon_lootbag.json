@@ -1,5 +1,4 @@
 {
-
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
@@ -13,10 +12,10 @@
 				"texture": "open_uncommon_lootbag"
 			}
 		},
-        "events": {
+		"events": {
 			"example:transform_event": {
 				"swing": {}
 			}
 		}
-		}
 	}
+}

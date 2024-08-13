@@ -27,7 +27,7 @@
 			"minecraft:behavior.delayed_attack": {
 				"attack_duration": 0.4,
 				"attack_once": false,
-				
+
 				"reach_multiplier": 2,
 				"speed_multiplier": 1,
 				"require_complete_path": true,
@@ -45,7 +45,7 @@
 			},
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 3,
-				"entity_types":{
+				"entity_types": {
 					"filters": {
 						"test": "is_family",
 						"subject": "other",

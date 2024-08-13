@@ -86,10 +86,18 @@
 					"rotation": ["math.abs(query.anim_time * 16) * 16", 0, 0]
 				},
 				"leftSleeve": {
-					"rotation": ["-math.cos(q.anim_time * 100) * 3", "-math.cos(q.anim_time * 125) * 10", 0]
+					"rotation": [
+						"-math.cos(q.anim_time * 100) * 3",
+						"-math.cos(q.anim_time * 125) * 10",
+						0
+					]
 				},
 				"rightSleeve": {
-					"rotation": ["math.cos(q.anim_time * 100) * 3", "math.cos(q.anim_time * 125) * 10", 0]
+					"rotation": [
+						"math.cos(q.anim_time * 100) * 3",
+						"math.cos(q.anim_time * 125) * 10",
+						0
+					]
 				}
 			},
 			"particle_effects": {
@@ -108,10 +116,26 @@
 						"0.25": [0, 110, 0],
 						"0.2917": [0, 112.56, 0],
 						"0.3333": [0, 114.77, 0],
-						"0.375": [0, "110 + math.cos(q.anim_time * 200) * 5", "math.cos(q.anim_time * 198) * 5"],
-						"2.6667": [0, "110 + math.cos(q.anim_time * 200) * 5", 0],
-						"2.875": [0, "37.5 + math.cos(q.anim_time * 200) * 5", 0],
-						"2.9167": [0, "10 + math.cos(q.anim_time * 200) * 5", 0],
+						"0.375": [
+							0,
+							"110 + math.cos(q.anim_time * 200) * 5",
+							"math.cos(q.anim_time * 198) * 5"
+						],
+						"2.6667": [
+							0,
+							"110 + math.cos(q.anim_time * 200) * 5",
+							0
+						],
+						"2.875": [
+							0,
+							"37.5 + math.cos(q.anim_time * 200) * 5",
+							0
+						],
+						"2.9167": [
+							0,
+							"10 + math.cos(q.anim_time * 200) * 5",
+							0
+						],
 						"3.0": [0, 0, 0]
 					}
 				},
@@ -121,10 +145,26 @@
 						"0.25": [0, 110, 0],
 						"0.2917": [0, 112.56, 0],
 						"0.3333": [0, 114.77, 0],
-						"0.375": ["math.cos(q.anim_time * 198) * 5", "110 + math.cos(q.anim_time * 200) * 5", 0],
-						"2.6667": [0, "110 + math.cos(q.anim_time * 200) * 5", 0],
-						"2.875": [0, "37.5 + math.cos(q.anim_time * 200) * 5", 0],
-						"2.9167": [0, "10 + math.cos(q.anim_time * 200) * 5", 0],
+						"0.375": [
+							"math.cos(q.anim_time * 198) * 5",
+							"110 + math.cos(q.anim_time * 200) * 5",
+							0
+						],
+						"2.6667": [
+							0,
+							"110 + math.cos(q.anim_time * 200) * 5",
+							0
+						],
+						"2.875": [
+							0,
+							"37.5 + math.cos(q.anim_time * 200) * 5",
+							0
+						],
+						"2.9167": [
+							0,
+							"10 + math.cos(q.anim_time * 200) * 5",
+							0
+						],
 						"3.0": [0, 0, 0]
 					}
 				}
@@ -148,10 +188,18 @@
 			"loop": true,
 			"bones": {
 				"leftSleeve": {
-					"rotation": ["-135 + math.cos(q.anim_time * 1000) * 25", 0, 0]
+					"rotation": [
+						"-135 + math.cos(q.anim_time * 1000) * 25",
+						0,
+						0
+					]
 				},
 				"rightSleeve": {
-					"rotation": ["-135 + math.cos(q.anim_time * 1000) * 25", 0, 0]
+					"rotation": [
+						"-135 + math.cos(q.anim_time * 1000) * 25",
+						0,
+						0
+					]
 				}
 			},
 			"sound_effects": {

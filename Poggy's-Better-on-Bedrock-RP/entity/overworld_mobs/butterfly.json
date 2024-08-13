@@ -8,10 +8,10 @@
 			},
 			"textures": {
 				"default": "textures/entity/butterfly_1",
-                "two": "textures/entity/butterfly_2",
-                "three": "textures/entity/butterfly_3",
-                "four": "textures/entity/butterfly_4",
-                "five": "textures/entity/butterfly_5"
+				"two": "textures/entity/butterfly_2",
+				"three": "textures/entity/butterfly_3",
+				"four": "textures/entity/butterfly_4",
+				"five": "textures/entity/butterfly_5"
 			},
 			"animations": {
 				"fly": "animation.butterfly.default"

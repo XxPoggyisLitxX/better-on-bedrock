@@ -16,9 +16,11 @@
 			},
 			"scripts": {
 				"animate": [
-					{"walk": "q.modified_move_speed >= 0.05 || (q.modified_move_speed >= 0.05 && !q.is_casting)"},
-					{"attack": "q.is_casting"},
-					{"idle": "q.modified_move_speed <= 0.05 && !q.is_casting"}
+					{
+						"walk": "q.modified_move_speed >= 0.05 || (q.modified_move_speed >= 0.05 && !q.is_casting)"
+					},
+					{ "attack": "q.is_casting" },
+					{ "idle": "q.modified_move_speed <= 0.05 && !q.is_casting" }
 				]
 			},
 			"geometry": {

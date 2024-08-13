@@ -20,9 +20,9 @@
 				"default": "geometry.adventurer_hat"
 			},
 			// We tell it to hide the chest layer as we will be showing our armor on top
-            "scripts": {
-                "scale": "context.is_first_person ? 0.0 : 1.0"
-            },
+			"scripts": {
+				"scale": "context.is_first_person ? 0.0 : 1.0"
+			},
 
 			// We tell it what controller to use (default armor one)
 			"render_controllers": ["controller.render.armor"]

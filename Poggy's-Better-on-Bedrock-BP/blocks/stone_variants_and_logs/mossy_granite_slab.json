@@ -16,7 +16,6 @@
 			}
 		},
 		"components": {
-			
 			"tag:stone": {},
 			"minecraft:on_player_placing": {
 				"event": "up",

@@ -22,7 +22,7 @@
 			"scripts": {
 				"animate": [
 					"basic",
-					{"baby": "q.is_baby"},
+					{ "baby": "q.is_baby" },
 					"look_at_target"
 				]
 			},

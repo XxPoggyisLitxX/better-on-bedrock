@@ -15,21 +15,21 @@
 			"scripts": {
 				"scale": "0.9375",
 				"animate": [
-				  "controller_general",
-				  "controller_move"
+					"controller_general",
+					"controller_move"
 				]
-			  },
-			  "animations": {
+			},
+			"animations": {
 				"general": "animation.willager.idle",
 				"casting": "animation.willager.casting",
 				"look_at_target": "animation.common.look_at_target",
 				"move": "animation.willager.walk",
 				"controller_general": "controller.animation.willager.general",
 				"controller_move": "controller.animation.villager.move"
-			  },
-			  "particle_effects": {
+			},
+			"particle_effects": {
 				"spell": "minecraft:evoker_spell"
-			  },
+			},
 			"render_controllers": ["controller.render.default"],
 			"spawn_egg": {
 				"base_color": "#9e71ae",

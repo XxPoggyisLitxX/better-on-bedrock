@@ -7,24 +7,28 @@
 				"idle": {
 					"animations": ["idle"],
 					"transitions": [
-						{"walking": "q.ground_speed > 1.0"},
-						{"attack": "q.is_delayed_attacking"}
+						{ "walking": "q.ground_speed > 1.0" },
+						{ "attack": "q.is_delayed_attacking" }
 					],
 					"blend_transition": 0.2
 				},
 				"walking": {
 					"animations": ["walk"],
 					"transitions": [
-						{"idle": "q.ground_speed < 0.5"},
-						{"attack": "q.is_delayed_attacking\n"}
+						{ "idle": "q.ground_speed < 0.5" },
+						{ "attack": "q.is_delayed_attacking\n" }
 					],
 					"blend_transition": 0.2
 				},
 				"attack": {
 					"animations": ["attack"],
 					"transitions": [
-						{"idle": "!q.is_delayed_attacking && q.ground_speed < 0.5"},
-						{"walking": "!q.is_delayed_attacking && q.ground_speed > 1.0"}
+						{
+							"idle": "!q.is_delayed_attacking && q.ground_speed < 0.5"
+						},
+						{
+							"walking": "!q.is_delayed_attacking && q.ground_speed > 1.0"
+						}
 					]
 				}
 			}

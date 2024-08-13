@@ -44,10 +44,12 @@
 		"events": {
 			"minecraft:entity_spawned": {
 				"run_command": {
-					"command": ["teleport @e[type=better_on_bedrock:willager_target_circle] @p"]
+					"command": [
+						"teleport @e[type=better_on_bedrock:willager_target_circle] @p"
+					]
 				}
 			},
-			"better_on_bedrock:target":{
+			"better_on_bedrock:target": {
 				"run_command": {
 					"command": ["summon lightning_bolt ~ ~ ~"]
 				},

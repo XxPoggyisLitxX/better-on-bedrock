@@ -19,8 +19,7 @@
 			"minecraft:attack": {
 				"damage": 3
 			},
-			
-			
+
 			"minecraft:damage_sensor": {
 				"triggers": [
 					{
@@ -30,7 +29,7 @@
 				]
 			},
 			"minecraft:behavior.nearest_attackable_target": {
-				"entity_types":[
+				"entity_types": [
 					{
 						"filters": {
 							"test": "is_family",
@@ -73,22 +72,22 @@
 				"value": 0.18
 			},
 
-		"minecraft:movement.basic": {
-			"max_turn": 30
-		},
-		"minecraft:movement.amphibious": {
-			"max_turn": 30
-		},
-		"minecraft:movement.generic": {
-			"max_turn": 30
-		},
-		"minecraft:navigation.walk": {},
-		"minecraft:behavior.random_stroll": {
-			"interval": 120,
-			"xz_dist": 10,
-			"y_dist": 7
-		},
-			
+			"minecraft:movement.basic": {
+				"max_turn": 30
+			},
+			"minecraft:movement.amphibious": {
+				"max_turn": 30
+			},
+			"minecraft:movement.generic": {
+				"max_turn": 30
+			},
+			"minecraft:navigation.walk": {},
+			"minecraft:behavior.random_stroll": {
+				"interval": 120,
+				"xz_dist": 10,
+				"y_dist": 7
+			},
+
 			"minecraft:pushable": {
 				"is_pushable": false
 			},

@@ -5,14 +5,14 @@
 			"states": {
 				"default": {
 					"transitions": [
-						{"fly": "q.is_sneaking"}
+						{ "fly": "q.is_sneaking" }
 					],
-                    "animations": ["no_bubbles"]
+					"animations": ["no_bubbles"]
 				},
 				"fly": {
 					"animations": ["blow_bubble"],
 					"transitions": [
-						{"default": "!q.is_sneaking"}
+						{ "default": "!q.is_sneaking" }
 					]
 				}
 			}

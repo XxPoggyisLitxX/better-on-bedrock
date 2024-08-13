@@ -33,7 +33,7 @@
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 8
 			},
-			
+
 			"tag:stone": {},
 			"minecraft:geometry": "geometry.custom_stairs",
 			"minecraft:material_instances": {

@@ -8,17 +8,17 @@
 		"components": {
 			//Basic components
 			"minecraft:destroy_time": 1,
-            "minecraft:on_interact": {
-                "event": "null",
-                "target": "self"
-            },
-			        "minecraft:creative_category": {
-          "category": "commands"
-      },
-      "minecraft:collision_box":false,
-      "minecraft:light_dampening": 1,
-      "minecraft:light_emission": 0,
-      "minecraft:geometry": "geometry.cross_crop",
+			"minecraft:on_interact": {
+				"event": "null",
+				"target": "self"
+			},
+			"minecraft:creative_category": {
+				"category": "commands"
+			},
+			"minecraft:collision_box": false,
+			"minecraft:light_dampening": 1,
+			"minecraft:light_emission": 0,
+			"minecraft:geometry": "geometry.cross_crop",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "fallen_leave",

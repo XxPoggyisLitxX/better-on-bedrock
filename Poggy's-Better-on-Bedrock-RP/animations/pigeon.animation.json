@@ -12,11 +12,19 @@
 					"position": [0, -1, 1]
 				},
 				"Right_Wing": {
-					"rotation": [90, -7.5, "90+ math.cos(q.anim_time * 1234) * 25"],
+					"rotation": [
+						90,
+						-7.5,
+						"90+ math.cos(q.anim_time * 1234) * 25"
+					],
 					"position": [2, 2, -1]
 				},
 				"Left_Wing": {
-					"rotation": [-280, 7.5, "-90 - math.cos(q.anim_time * 1234) * 25"],
+					"rotation": [
+						-280,
+						7.5,
+						"-90 - math.cos(q.anim_time * 1234) * 25"
+					],
 					"position": [-1, 2, -1]
 				},
 				"Tail": {

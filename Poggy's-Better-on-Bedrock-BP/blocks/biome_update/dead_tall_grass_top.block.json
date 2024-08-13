@@ -23,7 +23,7 @@
 					}
 				]
 			},
-			"minecraft:selection_box":{
+			"minecraft:selection_box": {
 				"origin": [
 					-3,
 					0,

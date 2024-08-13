@@ -16,10 +16,10 @@
 			"minecraft:projectile": {
 				"on_hit": {
 					"impact_damage": {
-					  "damage": 10,
-					  "knockback": true,
-					  "catch_fire": false,
-					  "semi_random_diff_damage": false
+						"damage": 10,
+						"knockback": true,
+						"catch_fire": false,
+						"semi_random_diff_damage": false
 					}
 				},
 				"power": 2,
@@ -28,7 +28,7 @@
 				"liquid_inertia": 1,
 				"uncertainty_base": 0,
 				"uncertainty_multiplier": 0,
-				"offset": [ 0, 1.5, 0 ],
+				"offset": [0, 1.5, 0],
 				"reflect_on_hurt": false,
 				"catch_fire": false
 			},

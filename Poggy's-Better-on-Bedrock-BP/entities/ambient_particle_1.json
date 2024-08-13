@@ -31,24 +31,24 @@
 				"speed_multiplier": 0.8
 			}
 		},
-        "events": {
-            "example:foo": {
-                "add": {
-                    "component_groups": [
-                        "despawn"
-                    ]
-                }
-            },
-            "minecraft:entity_spawned": {
-                "add": {
-                    "component_groups": [
-                        "timer"
-                    ]
-                },
-                "run_command": {
-                    "command": ["particle better_on_bedrock:ambience_2 ~ ~ ~"]
-                }
-            }
-        }
+		"events": {
+			"example:foo": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"timer"
+					]
+				},
+				"run_command": {
+					"command": ["particle better_on_bedrock:ambience_2 ~ ~ ~"]
+				}
+			}
+		}
 	}
 }

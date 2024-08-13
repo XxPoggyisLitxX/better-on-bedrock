@@ -11,11 +11,19 @@
 					"rotation": [60, 0, 0]
 				},
 				"Right_Wing": {
-					"rotation": [-62.5, -5, "90 - math.cos(q.anim_time * 1234) * 32"],
+					"rotation": [
+						-62.5,
+						-5,
+						"90 - math.cos(q.anim_time * 1234) * 32"
+					],
 					"position": [0, 0, 2]
 				},
 				"Left_Wing": {
-					"rotation": [-62.5, 5, "-90+ math.cos(q.anim_time * 1234) * 32"],
+					"rotation": [
+						-62.5,
+						5,
+						"-90+ math.cos(q.anim_time * 1234) * 32"
+					],
 					"position": [0, 0, 2]
 				},
 				"Head": {
