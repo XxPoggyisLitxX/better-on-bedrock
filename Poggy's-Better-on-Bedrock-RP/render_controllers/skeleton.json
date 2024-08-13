@@ -1,19 +1,19 @@
 {
-	"format_version": "1.8.0",
-	"render_controllers": {
-		"controller.render.skeleton": {
-			"arrays": {
-				"textures": {
-					"array.skins": [
-						"Texture.one",
-						"Texture.default"
-					]
-				}
-			},
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.skeleton": {
+            "arrays": {
+                "textures": {
+                    "array.skins": [
+                        "Texture.one",
+                        "Texture.default"
+                    ]
+                }
+            },
 
-			"geometry": "Geometry.default",
-			"materials": [{ "*": "Material.default" }],
-			"textures": ["Array.skins[query.variant]"]
-		}
-	}
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.default" }],
+            "textures": ["Array.skins[query.variant]"]
+        }
+    }
 }

@@ -1,10 +1,10 @@
 import {
-	BlockType,
-	DynamicPropertiesDefinition,
-	ItemStack,
-	ItemTypes,
-	ScreenDisplay,
-	world,
+    BlockType,
+    DynamicPropertiesDefinition,
+    ItemStack,
+    ItemTypes,
+    ScreenDisplay,
+    world,
 } from "@minecraft/server";
 import "./hardcore_ui/hardcore_selection_screen.js";
 

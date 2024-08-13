@@ -7,7 +7,7 @@ import { Entity, Player } from "@minecraft/server";
  * @param {number} x
  */
 function MathRound(x) {
-	return Math.round(x * 1000) / 1000;
+    return Math.round(x * 1000) / 1000;
 }
 
 /**
@@ -15,21 +15,21 @@ function MathRound(x) {
  * @param {Entity} entity
  */
 function isMoving(entity) {
-	if (!(entity instanceof Player) && !(entity instanceof Entity)) {
-		throw new TypeError("Parameter is not Entity or Player");
-	}
+    if (!(entity instanceof Player) && !(entity instanceof Entity)) {
+        throw new TypeError("Parameter is not Entity or Player");
+    }
 
-	/**
-	 * @type {import("@minecraft/server").Vector3}
-	 */
-	const vector = {
-		x: MathRound(entity.velocity.x),
-		y: MathRound(entity.velocity.y),
-		z: MathRound(entity.velocity.z),
-	};
+    /**
+     * @type {import("@minecraft/server").Vector3}
+     */
+    const vector = {
+        x: MathRound(entity.velocity.x),
+        y: MathRound(entity.velocity.y),
+        z: MathRound(entity.velocity.z),
+    };
 
-	if (vector.x === 0 && vector.y === 0 && vector.z === 0) return false;
-	else return true;
+    if (vector.x === 0 && vector.y === 0 && vector.z === 0) return false;
+    else return true;
 }
 
 export default isMoving;

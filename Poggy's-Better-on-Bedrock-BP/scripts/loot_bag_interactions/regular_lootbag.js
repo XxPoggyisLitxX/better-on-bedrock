@@ -1,39 +1,39 @@
 import {
-	Block,
-	Enchantment,
-	Entity,
-	EntityInventoryComponent,
-	ItemEnchantsComponent,
-	ItemStack,
-	ItemTypes,
-	world,
+    Block,
+    Enchantment,
+    Entity,
+    EntityInventoryComponent,
+    ItemEnchantsComponent,
+    ItemStack,
+    ItemTypes,
+    world,
 } from "@minecraft/server";
 import { system } from "@minecraft/server";
 import { DynamicPropertiesDefinition } from "@minecraft/server";
 import {
-	ActionFormData,
-	MessageFormData,
-	ModalFormData,
+    ActionFormData,
+    MessageFormData,
+    ModalFormData,
 } from "@minecraft/server-ui";
 
 world.afterEvents.itemUse.subscribe((data) => {
-	let { source: player } = data;
+    let { source: player } = data;
 
-	let invi = player.getComponent("inventory").container;
-	let items = invi.getItem(player.selectedSlot);
-	//this spawns the entity with a tag with the player name when the player does not have tag 'backpack1'
-	if (items?.typeId == "better_on_bedrock:uncommon_lootbag") {
-		player.runCommandAsync("function lootbag_uncommon");
-	}
-	if (items?.typeId == "better_on_bedrock:common_lootbag") {
-		player.runCommandAsync("function common_lootbag");
-	}
-	if (items?.typeId == "minecraft:stick") {
-		console.warn("test");
-		player.runCommandAsync(
-			"structure save nameId ~-5 ~-1 ~-5 ~+5 ~+5 ~+5 true memory false",
-		);
-	}
+    let invi = player.getComponent("inventory").container;
+    let items = invi.getItem(player.selectedSlot);
+    //this spawns the entity with a tag with the player name when the player does not have tag 'backpack1'
+    if (items?.typeId == "better_on_bedrock:uncommon_lootbag") {
+        player.runCommandAsync("function lootbag_uncommon");
+    }
+    if (items?.typeId == "better_on_bedrock:common_lootbag") {
+        player.runCommandAsync("function common_lootbag");
+    }
+    if (items?.typeId == "minecraft:stick") {
+        console.warn("test");
+        player.runCommandAsync(
+            "structure save nameId ~-5 ~-1 ~-5 ~+5 ~+5 ~+5 true memory false",
+        );
+    }
 });
 /*
 system.runInterval((data) => {

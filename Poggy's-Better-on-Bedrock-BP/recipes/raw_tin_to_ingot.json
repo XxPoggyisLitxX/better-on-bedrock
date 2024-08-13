@@ -1,12 +1,12 @@
 {
-	"format_version": "1.12",
-	"minecraft:recipe_furnace": {
-		"description": {
-			"identifier": "minecraft:raw_tin_to_ingot"
-		},
+    "format_version": "1.12",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "minecraft:raw_tin_to_ingot"
+        },
 
-		"tags": ["furnace", "blast_furnace"],
-		"input": "better_on_bedrock:raw_tin",
-		"output": "better_on_bedrock:tin_ingot"
-	}
+        "tags": ["furnace", "blast_furnace"],
+        "input": "better_on_bedrock:raw_tin",
+        "output": "better_on_bedrock:tin_ingot"
+    }
 }
