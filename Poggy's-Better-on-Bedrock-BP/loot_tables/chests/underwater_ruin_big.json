@@ -98,10 +98,10 @@
                     "name": "minecraft:map",
                     "weight": 10,
                     "functions": [
-                         {
+                        {
                             "function": "exploration_map",
                             "destination": "buriedtreasure"
-                         }
+                        }
                     ]
                 }
             ]

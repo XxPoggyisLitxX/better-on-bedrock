@@ -4,7 +4,7 @@
         "description": {
             "identifier": "better_on_bedrock:desert_grass_1"
         },
-        "age":{
+        "age": {
             "range_min": 2,
             "range_max": 2
         },

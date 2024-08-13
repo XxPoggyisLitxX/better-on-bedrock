@@ -1,55 +1,37 @@
 {
+    "pools": [
+        {
+            "rolls": 1,
 
-	"pools": [
+            "entries": [
+                {
+                    "type": "item",
 
-		{
+                    "name": "better_on_bedrock:lavender_leaf",
 
-			"rolls": 1,
+                    "weight": 1,
 
-			"entries": [
+                    "functions": [
+                        {
+                            "function": "set_count",
 
-				{
+                            "count": {
+                                "min": 1,
 
-					"type": "item",
-
-					"name": "better_on_bedrock:lavender_leaf",
-
-					"weight": 1,
-
-					"functions": [
-
-						{
-
-							"function": "set_count",
-
-							"count": {
-
-								"min": 1,
-
-								"max": 3
-
-							}
-
-						},
-						{
-
-
-
-
-							"function": "set_lore",
-							"lore": [
-								" ",
-								" ",
-								"§f§rNo other use other than to make purple dye"
-							]
-						}
-					]
-				}
-
-			]
-
-		}
-
-	]
-
+                                "max": 3
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                " ",
+                                " ",
+                                "§f§rNo other use other than to make purple dye"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }

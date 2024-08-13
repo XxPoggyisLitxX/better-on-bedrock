@@ -1,17 +1,16 @@
 {
-
-	"format_version": "1.16.100",
-	"minecraft:item": {
-		"description": {
-			"identifier": "better_on_bedrock:staff_lvl_2",
-			"category": "items"
-		},
-		"components": {
-			"minecraft:max_stack_size": 64,
-			"minecraft:foil": false,
-			"minecraft:icon": {
-				"texture": "staff"
-			},
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "better_on_bedrock:staff_lvl_2",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "minecraft:foil": false,
+            "minecraft:icon": {
+                "texture": "staff"
+            },
             "minecraft:on_use": {
                 "on_use": {
                     "event": "better_on_bedrock:give_effect",
@@ -29,11 +28,10 @@
                 "category": "staff",
                 "duration": 1
             }
-		},
+        },
         "events": {
             "better_on_bedrock:give_effect": {
-               
-                  "sequence": [
+                "sequence": [
                     {
                         "shoot": {
                             "projectile": "better_on_bedrock:staff_projectile",
@@ -49,10 +47,10 @@
                             "type": "none",
                             "amount": 1,
                             "target": "self"
-                          }
+                        }
                     }
                 ]
             }
         }
-		}
-	}
+    }
+}

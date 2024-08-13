@@ -16,7 +16,7 @@
             },
             {
                 "item": "minecraft:wheat"
-              }
+            }
         ],
         "result": {
             "item": "better_on_bedrock:dough",

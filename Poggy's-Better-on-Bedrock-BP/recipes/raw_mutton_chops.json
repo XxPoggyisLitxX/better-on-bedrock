@@ -7,20 +7,20 @@
         "tags": [
             "crafting_table"
         ],
-          "pattern": [
+        "pattern": [
             "bd"
-          ],
-          "key": {
+        ],
+        "key": {
             "b": {
-              "item": "minecraft:mutton"
+                "item": "minecraft:mutton"
             },
             "d": {
-              "item": "better_on_bedrock:dagger"
+                "item": "better_on_bedrock:dagger"
             }
-          },
+        },
         "result": [
             { "item": "better_on_bedrock:raw_mutton_chops" },
             { "item": "better_on_bedrock:dagger", "data": 25 }
-          ]
+        ]
     }
 }

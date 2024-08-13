@@ -4,25 +4,25 @@
         "description": {
             "identifier": "better_on_bedrock:enchant_table"
         },
-        "tags": [ "crafting_table" ],
+        "tags": ["crafting_table"],
         "pattern": [
-          "   ",
-          "#B#",
-          "ppp"
+            "   ",
+            "#B#",
+            "ppp"
         ],
         "key": {
-          "p": {
-            "item": "minecraft:planks"
-          },
-          "#": {
-            "item": "better_on_bedrock:tin_ingot"
-          },
-          "B": {
-            "item": "minecraft:book"
-          }
+            "p": {
+                "item": "minecraft:planks"
+            },
+            "#": {
+                "item": "better_on_bedrock:tin_ingot"
+            },
+            "B": {
+                "item": "minecraft:book"
+            }
         },
         "result": [
-          { "item": "better_on_bedrock:enchant_bench" }
+            { "item": "better_on_bedrock:enchant_bench" }
         ]
     }
 }

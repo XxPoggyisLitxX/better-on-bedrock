@@ -1,18 +1,17 @@
 {
-
-	"format_version": "1.16.100",
-	"minecraft:item": {
-		"description": {
-			"identifier": "better_on_bedrock:staff_of_protection",
-			"category": "items"
-		},
-		"components": {
-			"minecraft:max_stack_size": 1,
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "better_on_bedrock:staff_of_protection",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
             "minecraft:hand_equipped": true,
-			"minecraft:foil": false,
-			"minecraft:icon": {
-				"texture": "staff_of_protection"
-			},
+            "minecraft:foil": false,
+            "minecraft:icon": {
+                "texture": "staff_of_protection"
+            },
             "minecraft:on_use": {
                 "on_use": {
                     "event": "better_on_bedrock:give_effect",
@@ -30,12 +29,11 @@
                 "category": "staffs",
                 "duration": 30
             }
-		},
+        },
         "events": {
             "better_on_bedrock:give_effect": {
-               
-                  "sequence": [
-                   /* {
+                "sequence": [
+                    /* {
                         "add_mob_effect": {
                             "effect": "resistance",
                             "target": "holder",
@@ -59,7 +57,7 @@
                             "type": "none",
                             "amount": 1,
                             "target": "self"
-                          }
+                        }
                     },
                     {
                         "shoot": {
@@ -71,5 +69,5 @@
                 ]
             }
         }
-		}
-	}
+    }
+}

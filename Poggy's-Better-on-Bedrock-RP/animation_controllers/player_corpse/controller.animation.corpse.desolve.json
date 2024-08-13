@@ -4,7 +4,7 @@
         "controller.animation.corpse.desolve": {
             "initial_state": "default",
             "states": {
-                "default":{
+                "default": {
                     "transitions": [
                         {
                             "desolve": "q.mark_variant == 1"
@@ -12,7 +12,7 @@
                     ]
                 },
 
-                "desolve":{
+                "desolve": {
                     "animations": [
                         "desolve"
                     ]

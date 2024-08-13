@@ -36,7 +36,7 @@
                         }
                     ]
                 },
-                 {
+                {
                     "type": "item",
                     "name": "better_on_bedrock:deer_hide",
                     "weight": 70,
@@ -57,7 +57,6 @@
                         }
                     ]
                 }
-                
             ]
         }
     ]

@@ -1,4 +1,9 @@
-import { world, ItemStack,  DynamicPropertiesDefinition, ItemTypes } from "@minecraft/server";
+import {
+    DynamicPropertiesDefinition,
+    ItemStack,
+    ItemTypes,
+    world,
+} from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 
 import * as Bounties from "./constants/Bounties.js";
@@ -7,16 +12,16 @@ import * as BountyStatus from "./constants/BountyStatus.js";
 /*world.afterEvents.worldInitialize.subscribe(
     ({ propertyRegistry }) => {
         const playerCompShowTick = new DynamicPropertiesDefinition();
-        
+
         playerCompShowTick.defineString( "bounties", 102 );
-            
+
         propertyRegistry.registerEntityTypeDynamicProperties(
             playerCompShowTick, MinecraftEntityTypes["player"]
         );
     },
 );*/
 
-const getFormattedStatus = ( status ) => {
+const getFormattedStatus = (status) => {
     if (status == 0) return "§dOpen";
     else if (status == 1) return "§cSearching Bounty...";
     else if (status == 2) return "§aBounty Found!";
@@ -28,7 +33,7 @@ const bounties = [
         id: Bounties.CowSlayer,
         progress: 0,
         status: BountyStatus.Open,
-    }
+    },
 ];
 
 const quests = [
@@ -36,57 +41,67 @@ const quests = [
         id: Bounties.CowSlayer,
         name: "Cow Slayer",
         functions: {
-            start: ( player ) => {
-                const savedBounties = JSON.parse(player.getDynamicProperty( "bounties" ));
+            start: (player) => {
+                const savedBounties = JSON.parse(
+                    player.getDynamicProperty("bounties"),
+                );
                 const form = new ActionFormData();
-                form.title( "Cow Slayer" );
-                form.body( "Hunt down 3 cows.\n§7Rewards: 22 Coal and 20 XP" );
-                form.button( "Start Hunt" );
-                form.button( "Not Now" );
-                form.show( player ).then(
+                form.title("Cow Slayer");
+                form.body("Hunt down 3 cows.\n§7Rewards: 22 Coal and 20 XP");
+                form.button("Start Hunt");
+                form.button("Not Now");
+                form.show(player).then(
                     (response) => {
                         switch (response?.selection) {
                             case 0:
                                 player.sendMessage("§aQuest Started!");
-                                savedBounties.find((b) => b.id == Bounties.CowSlayer).status = BountyStatus.Busy;
+                                savedBounties.find((b) =>
+                                    b.id == Bounties.CowSlayer
+                                ).status = BountyStatus.Busy;
                                 player.setDynamicProperty(
                                     "bounties",
-                                    JSON.stringify( savedBounties ),
+                                    JSON.stringify(savedBounties),
                                 );
-                            break;
-                        };
+                                break;
+                        }
                     },
                 );
             },
-            about: ( player ) => {
+            about: (player) => {
                 const form = new ActionFormData();
-                form.title( "Cow Slayer" );
-                form.body( "Hunt down 3 cows.\n§7Rewards: 22 Coal and 20 XP" );
-                form.button( "Got It!" );
-                form.show( player );
+                form.title("Cow Slayer");
+                form.body("Hunt down 3 cows.\n§7Rewards: 22 Coal and 20 XP");
+                form.button("Got It!");
+                form.show(player);
             },
-            claim: ( player ) => {
-                const savedBounties = JSON.parse(player.getDynamicProperty( "bounties" ));
+            claim: (player) => {
+                const savedBounties = JSON.parse(
+                    player.getDynamicProperty("bounties"),
+                );
                 const form = new ActionFormData();
-                form.title( "Cow Slayer" );
-                form.body( "You hunted down 3 cows, claim your reward!\n/7Rewards: 22 Coal and 20 XP" );
+                form.title("Cow Slayer");
+                form.body(
+                    "You hunted down 3 cows, claim your reward!\n/7Rewards: 22 Coal and 20 XP",
+                );
                 form.button("Claim!");
-                form.show( player ).then(
+                form.show(player).then(
                     (response) => {
                         switch (response?.selection) {
                             case 0:
-                                const bounty = savedBounties.find((b) => b.id == Bounties.CowSlayer);
+                                const bounty = savedBounties.find((b) =>
+                                    b.id == Bounties.CowSlayer
+                                );
                                 if (bounty.status != BountyStatus.Claimed) {
-                                    player.runCommandAsync( "xp 20" );
-                                    player.runCommandAsync( "give @s coal 22" );
+                                    player.runCommandAsync("xp 20");
+                                    player.runCommandAsync("give @s coal 22");
                                     bounty.status = BountyStatus.Claimed;
                                     player.setDynamicProperty(
                                         "bounties",
-                                        JSON.stringify( savedBounties ),
+                                        JSON.stringify(savedBounties),
                                     );
-                                };
-                            break;
-                        };
+                                }
+                                break;
+                        }
                     },
                 );
             },
@@ -344,74 +359,77 @@ const quests = [
     },
 ];*/
 
-export const bounty_tier_page = ( player ) => {
-    let savedBounties = JSON.parse(player.getDynamicProperty( "bounties" ));
+export const bounty_tier_page = (player) => {
+    let savedBounties = JSON.parse(player.getDynamicProperty("bounties"));
     for (const savedBounty of savedBounties) {
         if (!quests.find((q) => q.id == savedBounty.id)) {
             savedBounties = savedBounties.filter((q) => q.id != savedBounty.id);
-        };
-    };
-    
+        }
+    }
+
     player.setDynamicProperty(
         "bounties",
-        JSON.stringify( savedBounties ),
+        JSON.stringify(savedBounties),
     );
-    
+
     const form = new ActionFormData();
-    form.title( "§fBounties" );
-    form.body( "Welcome to the bounty screen. Select an exisitng bounty, or a newly unlocked bounty and follow the instructions. Each bounty will have a difficulty indicated by 'I, II, III, IV, V'." );
-    
+    form.title("§fBounties");
+    form.body(
+        "Welcome to the bounty screen. Select an exisitng bounty, or a newly unlocked bounty and follow the instructions. Each bounty will have a difficulty indicated by 'I, II, III, IV, V'.",
+    );
+
     for (const questO of quests) {
         const quest = savedBounties.find((b) => b.id == questO.id);
         const questStatus = getFormattedStatus(quest.status);
-        
+
         form.button(
             (
-                quest.status == BountyStatus.Open
-                || quest.status == BountyStatus.Claimed
+                quest.status == BountyStatus.Open ||
+                    quest.status == BountyStatus.Claimed
                     ? "§7"
                     : "§f"
-            )
-            + questO.name + " - " + questStatus,
-            questO.icon
+            ) +
+                questO.name + " - " + questStatus,
+            questO.icon,
         );
-    };
-    
-    form.show( player ).then(
+    }
+
+    form.show(player).then(
         (response) => {
             if (response.canceled) return;
-            const bounty = savedBounties.find((b) => b.id == response.selection);
+            const bounty = savedBounties.find((b) =>
+                b.id == response.selection
+            );
             const b = quests.find((b) => b.id == response.selection);
-            
-            if (bounty.status == BountyStatus.Open) b.start( player );
-            else if (bounty.status == BountyStatus.Busy) b.info( player );
-            else if (bounty.status == BountyStatus.Completed) b.claim( player );
+
+            if (bounty.status == BountyStatus.Open) b.start(player);
+            else if (bounty.status == BountyStatus.Busy) b.info(player);
+            else if (bounty.status == BountyStatus.Completed) b.claim(player);
         },
     );
 };
 
 world.beforeEvents.ItemUse.subscribe(
     ({ source: player, item }) => {
+        if (item?.typeId == "better_on_bedrock:quest_scroll_closed") {
+            player.addTag("cow_bounty_open");
+            const inventory = player.getComponent("inventory").container;
+            const newItem = new ItemStack(
+                ItemTypes?.get("better_on_bedrock:quest_scroll_opened"),
+            );
 
-                if( item?.typeId == "better_on_bedrock:quest_scroll_closed"){
-                player.addTag( "cow_bounty_open" )
-                const inventory = player.getComponent( "inventory" ).container;
-                const newItem = new ItemStack(ItemTypes?.get("better_on_bedrock:quest_scroll_opened"));
-                
-                inventory.setItem( player.selectedSlot, newItem );
+            inventory.setItem(player.selectedSlot, newItem);
+        }
+
+        if (item?.typeId == "better_on_bedrock:quest_scroll_opened") {
+            if (!player.getDynamicProperty("bounties")) {
+                player.setDynamicProperty(
+                    "bounties",
+                    JSON.stringify(bounties),
+                );
             }
 
-                if(item?.typeId == "better_on_bedrock:quest_scroll_opened"){
-
-                if (!player.getDynamicProperty( "bounties" )) {
-                    player.setDynamicProperty(
-                        "bounties",
-                        JSON.stringify( bounties ),
-                    );
-                };
-
-                bounty_tier_page( player );
-
-        };
+            bounty_tier_page(player);
+        }
     },
 );

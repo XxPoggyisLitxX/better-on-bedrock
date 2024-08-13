@@ -12,28 +12,21 @@
             "TSE",
             " O "
         ],*/
-        "ingredients":[{
+        "ingredients": [{
             "item": "better_on_bedrock:barley_straw"
-        },
-        {
+        }, {
             "item": "minecraft:red_mushroom"
-        },
-        {
+        }, {
             "item": "better_on_bedrock:baked_onion"
-        },
-        {
+        }, {
             "item": "minecraft:sugar"
-        },
-        {
+        }, {
             "item": "better_on_bedrock:tomato_seed"
-        },
-        {
+        }, {
             "item": "better_on_bedrock:baked_eggplant"
-        },
-        {
+        }, {
             "item": "minecraft:bowl"
-        }
-    ],
+        }],
         /*"key": {
             "B": {
                 "item": "better_on_bedrock:barley_straw"

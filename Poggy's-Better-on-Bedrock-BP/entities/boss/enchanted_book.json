@@ -1,17 +1,17 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:entity": {
-		"description": {
-			"identifier": "better_on_bedrock:enchanted_book",
-			"is_spawnable": true,
-			"is_summonable": true,
-			"is_experimental": false
-		},
-		"components": {
-			"minecraft:physics": {
-				"has_gravity": true,
-				"has_collision": true
-			},
+    "format_version": "1.16.100",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "better_on_bedrock:enchanted_book",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:physics": {
+                "has_gravity": true,
+                "has_collision": true
+            },
             "minecraft:timer": {
                 "time": 2.1,
                 "looping": true,
@@ -28,13 +28,13 @@
                     }
                 ]
             },
-			"minecraft:pushable": {
-				"is_pushable": false
-			},
-			"minecraft:push_through": {
-				"value": 1
-			}
-		},
+            "minecraft:pushable": {
+                "is_pushable": false
+            },
+            "minecraft:push_through": {
+                "value": 1
+            }
+        },
         "component_groups": {
             "despawn": {
                 "minecraft:instant_despawn": {
@@ -56,5 +56,5 @@
                 }
             }
         }
-	}
+    }
 }

@@ -15,25 +15,25 @@
                 },
                 "minecraft:ageable": {
                     "duration": 1200,
-                    "feed_items": [ 
-                        "minecraft:red_flower",     // All small flowers except Dandelion
-                        "minecraft:yellow_flower",  // Dandelion
+                    "feed_items": [
+                        "minecraft:red_flower", // All small flowers except Dandelion
+                        "minecraft:yellow_flower", // Dandelion
                         "minecraft:wither_rose",
                         "minecraft:sweet_berry_bush",
                         "minecraft:double_plant:8", // Sunflower top
                         "minecraft:double_plant:9", // Lilac top
                         "minecraft:double_plant:12", // Rose Bush top
-                        "minecraft:double_plant:13",  // Peony top
+                        "minecraft:double_plant:13", // Peony top
 
-                        "better_on_bedrock:anenome_item",    
-                        "better_on_bedrock:big_sprout_item",  
+                        "better_on_bedrock:anenome_item",
+                        "better_on_bedrock:big_sprout_item",
                         "better_on_bedrock:blugrod_tall_item",
                         "better_on_bedrock:glow_flower_item",
-                        "better_on_bedrock:hydrangea_item", 
-                        "better_on_bedrock:iris_item", 
-                        "better_on_bedrock:lilax_heads_item", 
-                        "better_on_bedrock:pink_lavender_item"  ,
-                        "better_on_bedrock:tiny_sprout_item", 
+                        "better_on_bedrock:hydrangea_item",
+                        "better_on_bedrock:iris_item",
+                        "better_on_bedrock:lilax_heads_item",
+                        "better_on_bedrock:pink_lavender_item",
+                        "better_on_bedrock:tiny_sprout_item",
                         "better_on_bedrock:wildflower_item",
                         "better_on_bedrock:wild_flower_item" // Peony
                     ],
@@ -66,27 +66,27 @@
                             "target": "baby"
                         }
                     },
-                    "breed_items": [ 
-                        "minecraft:red_flower",     // All small flowers except Dandelion
-                        "minecraft:yellow_flower",  // Dandelion
+                    "breed_items": [
+                        "minecraft:red_flower", // All small flowers except Dandelion
+                        "minecraft:yellow_flower", // Dandelion
                         "minecraft:wither_rose",
                         "minecraft:sweet_berry_bush",
                         "minecraft:double_plant:8", // Sunflower top
                         "minecraft:double_plant:9", // Lilac top
                         "minecraft:double_plant:12", // Rose Bush top
-                        "minecraft:double_plant:13",  // Peony top
+                        "minecraft:double_plant:13", // Peony top
 
-                        "better_on_bedrock:anenome_item",    
-                        "better_on_bedrock:big_sprout_item",  
+                        "better_on_bedrock:anenome_item",
+                        "better_on_bedrock:big_sprout_item",
                         "better_on_bedrock:blugrod_tall_item",
                         "better_on_bedrock:glow_flower_item",
-                        "better_on_bedrock:hydrangea_item", 
-                        "better_on_bedrock:iris_item", 
-                        "better_on_bedrock:lilax_heads_item", 
-                        "better_on_bedrock:pink_lavender_item"  ,
-                        "better_on_bedrock:tiny_sprout_item", 
+                        "better_on_bedrock:hydrangea_item",
+                        "better_on_bedrock:iris_item",
+                        "better_on_bedrock:lilax_heads_item",
+                        "better_on_bedrock:pink_lavender_item",
+                        "better_on_bedrock:tiny_sprout_item",
                         "better_on_bedrock:wildflower_item",
-                        "better_on_bedrock:wild_flower_item"  // Peony
+                        "better_on_bedrock:wild_flower_item" // Peony
                     ]
                 }
             },
@@ -144,10 +144,10 @@
                     "priority": 4,
                     "speed_multiplier": 1.25,
                     "force": true
-                  },
+                },
                 "minecraft:timer": {
                     "looping": false,
-                    "time": [20,50],
+                    "time": [20, 50],
                     "randomInterval": true,
                     "time_down_event": {
                         "event": "stop_panicking_after_fire",
@@ -157,13 +157,13 @@
             },
             "countdown_to_perish": {
                 "minecraft:mark_variant": {
-                  "value": 1
+                    "value": 1
                 },
                 "minecraft:behavior.panic": {
                     "priority": 1,
                     "speed_multiplier": 1.25,
                     "force": true
-                  },
+                },
                 "minecraft:timer": {
                     "looping": false,
                     "time": [10, 60],
@@ -174,7 +174,7 @@
                     }
                 },
                 "minecraft:type_family": {
-                    "family": [ "bee", "mob", "arthropod", "pacified" ]
+                    "family": ["bee", "mob", "arthropod", "pacified"]
                 }
             },
             "perish": {
@@ -193,9 +193,9 @@
                     "entity_types": [
                         {
                             "filters": {
-                              "test": "is_family",
-                              "subject": "other",
-                              "value": "player"
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "player"
                             },
                             "max_dist": 10
                         }
@@ -222,27 +222,26 @@
                     "target_selection_method": "random",
                     "target_offset": [0, 0.25, 0],
                     "target_blocks": [
-                        "minecraft:red_flower",     // All small flowers except Dandelion
-                        "minecraft:yellow_flower",  // Dandelion
+                        "minecraft:red_flower", // All small flowers except Dandelion
+                        "minecraft:yellow_flower", // Dandelion
                         "minecraft:wither_rose",
                         "minecraft:sweet_berry_bush",
                         "minecraft:double_plant:8", // Sunflower top
                         "minecraft:double_plant:9", // Lilac top
                         "minecraft:double_plant:12", // Rose Bush top
-                        "minecraft:double_plant:13",  // Peony top
+                        "minecraft:double_plant:13", // Peony top
 
-                        "better_on_bedrock:anenome",    
-                        "better_on_bedrock:big_sprout",  
+                        "better_on_bedrock:anenome",
+                        "better_on_bedrock:big_sprout",
                         "better_on_bedrock:blugrod_tall",
                         "better_on_bedrock:glow_flower",
-                        "better_on_bedrock:hydrangea", 
-                        "better_on_bedrock:iris", 
-                        "better_on_bedrock:lilax_heads", 
-                        "better_on_bedrock:pink_lavender"  ,
-                        "better_on_bedrock:tiny_sprout", 
+                        "better_on_bedrock:hydrangea",
+                        "better_on_bedrock:iris",
+                        "better_on_bedrock:lilax_heads",
+                        "better_on_bedrock:pink_lavender",
+                        "better_on_bedrock:tiny_sprout",
                         "better_on_bedrock:wildflower",
                         "better_on_bedrock:wild_flower"
-
                     ],
                     "on_stay_completed": [
                         {
@@ -258,10 +257,10 @@
                         "event": "find_flower_timeout"
                     }
                 },
-                "minecraft:ambient_sound_interval" :{
-                    "event_name" : "ambient.pollinate",
-                    "range" : 3.0,
-                    "value" : 2.0
+                "minecraft:ambient_sound_interval": {
+                    "event_name": "ambient.pollinate",
+                    "range": 3.0,
+                    "value": 2.0
                 }
             },
             "has_nectar": {
@@ -280,9 +279,17 @@
                     "on_home": [
                         {
                             "filters": {
-                                "any_of":[
-                                    { "test": "is_block", "subject": "block", "value": "minecraft:bee_nest" },
-                                    { "test": "is_block", "subject": "block", "value": "minecraft:beehive" }
+                                "any_of": [
+                                    {
+                                        "test": "is_block",
+                                        "subject": "block",
+                                        "value": "minecraft:bee_nest"
+                                    },
+                                    {
+                                        "test": "is_block",
+                                        "subject": "block",
+                                        "value": "minecraft:beehive"
+                                    }
                                 ]
                             },
                             "event": "minecraft:bee_returned_to_hive",
@@ -290,9 +297,19 @@
                         },
                         {
                             "filters": {
-                                "all_of":[
-                                    { "test": "is_block", "subject": "block", "operator": "!=", "value": "minecraft:bee_nest" },
-                                    { "test": "is_block", "subject": "block", "operator": "!=", "value": "minecraft:beehive" }
+                                "all_of": [
+                                    {
+                                        "test": "is_block",
+                                        "subject": "block",
+                                        "operator": "!=",
+                                        "value": "minecraft:bee_nest"
+                                    },
+                                    {
+                                        "test": "is_block",
+                                        "subject": "block",
+                                        "operator": "!=",
+                                        "value": "minecraft:beehive"
+                                    }
                                 ]
                             },
                             "event": "find_hive_event",
@@ -418,11 +435,11 @@
                     "effect_duration": 18
                 }
             },
-            "default_sound" : {
-                "minecraft:ambient_sound_interval" :{
-                    "event_name" : "ambient",
-                    "range" : 0.0,
-                    "value" : 0.0
+            "default_sound": {
+                "minecraft:ambient_sound_interval": {
+                    "event_name": "ambient",
+                    "range": 0.0,
+                    "value": 0.0
                 }
             }
         },
@@ -433,26 +450,26 @@
                 "within_radius": 8,
                 "can_tempt_vertically": true,
                 "items": [
-                    "minecraft:red_flower",     // All small flowers except Dandelion
-                        "minecraft:yellow_flower",  // Dandelion
-                        "minecraft:wither_rose",
-                        "minecraft:sweet_berry_bush",
-                        "minecraft:double_plant:8", // Sunflower top
-                        "minecraft:double_plant:9", // Lilac top
-                        "minecraft:double_plant:12", // Rose Bush top
-                        "minecraft:double_plant:13",  // Peony top
+                    "minecraft:red_flower", // All small flowers except Dandelion
+                    "minecraft:yellow_flower", // Dandelion
+                    "minecraft:wither_rose",
+                    "minecraft:sweet_berry_bush",
+                    "minecraft:double_plant:8", // Sunflower top
+                    "minecraft:double_plant:9", // Lilac top
+                    "minecraft:double_plant:12", // Rose Bush top
+                    "minecraft:double_plant:13", // Peony top
 
-                        "better_on_bedrock:anenome_item",    
-                        "better_on_bedrock:big_sprout_item",  
-                        "better_on_bedrock:blugrod_tall_item",
-                        "better_on_bedrock:glow_flower_item",
-                        "better_on_bedrock:hydrangea_item", 
-                        "better_on_bedrock:iris_item", 
-                        "better_on_bedrock:lilax_heads_item", 
-                        "better_on_bedrock:pink_lavender_item"  ,
-                        "better_on_bedrock:tiny_sprout_item", 
-                        "better_on_bedrock:wildflower_item",
-                        "better_on_bedrock:wild_flower_item" // Peony
+                    "better_on_bedrock:anenome_item",
+                    "better_on_bedrock:big_sprout_item",
+                    "better_on_bedrock:blugrod_tall_item",
+                    "better_on_bedrock:glow_flower_item",
+                    "better_on_bedrock:hydrangea_item",
+                    "better_on_bedrock:iris_item",
+                    "better_on_bedrock:lilax_heads_item",
+                    "better_on_bedrock:pink_lavender_item",
+                    "better_on_bedrock:tiny_sprout_item",
+                    "better_on_bedrock:wildflower_item",
+                    "better_on_bedrock:wild_flower_item" // Peony
                 ]
             },
             "minecraft:behavior.random_hover": {
@@ -472,7 +489,7 @@
                 "priority": 20
             },
             "minecraft:type_family": {
-                "family": [ "bee", "mob", "arthropod" ]
+                "family": ["bee", "mob", "arthropod"]
             },
             "minecraft:on_target_acquired": {
                 "event": "attacked",
@@ -537,7 +554,8 @@
                 "on_break": [
                     {
                         "block_list": [
-                            "minecraft:beehive", "minecraft:bee_nest"
+                            "minecraft:beehive",
+                            "minecraft:bee_nest"
                         ],
                         "on_block_broken": "hive_destroyed"
                     }
@@ -547,7 +565,7 @@
             "minecraft:pushable": {
                 "is_pushable": true,
                 "is_pushable_by_piston": true
-              }
+            }
         },
         "events": {
             "minecraft:entity_spawned": {
@@ -644,7 +662,7 @@
                     }
                 ]
             },
-            "stop_panicking_after_fire" : {
+            "stop_panicking_after_fire": {
                 "remove": {
                     "component_groups": [
                         "escape_fire"
@@ -702,36 +720,39 @@
                         }
                     },
                     {
-                        "filters": { "test" : "is_difficulty", "value" : "easy"},            
+                        "filters": { "test": "is_difficulty", "value": "easy" },
                         "remove": {
-                            "component_groups": [ "normal_attack", "hard_attack" ]
+                            "component_groups": ["normal_attack", "hard_attack"]
                         },
                         "add": {
-                            "component_groups": [ "easy_attack" ]
+                            "component_groups": ["easy_attack"]
                         }
                     },
                     {
-                        "filters": { "test" : "is_difficulty", "value" : "normal"},
+                        "filters": {
+                            "test": "is_difficulty",
+                            "value": "normal"
+                        },
                         "remove": {
-                            "component_groups": [ "easy_attack", "hard_attack" ]
+                            "component_groups": ["easy_attack", "hard_attack"]
                         },
                         "add": {
-                            "component_groups": [ "normal_attack" ]
+                            "component_groups": ["normal_attack"]
                         }
                     },
                     {
-                        "filters": { "test" : "is_difficulty", "value" : "hard"},
+                        "filters": { "test": "is_difficulty", "value": "hard" },
                         "remove": {
-                            "component_groups": [ "easy_attack", "normal_attack" ]
+                            "component_groups": ["easy_attack", "normal_attack"]
                         },
                         "add": {
-                            "component_groups": [ "hard_attack" ]
+                            "component_groups": ["hard_attack"]
                         }
                     }
                 ]
             },
             "calmed_down": {
-                "add" : {
+                "add": {
                     "component_groups": [
                         "shelter_detection",
                         "return_to_home"
@@ -774,38 +795,38 @@
             "find_hive_timeout": {
                 "sequence": [
                     {
-                       "filters": {
-                           "test": "has_component",
-                           "operator": "!=",
-                           "value": "minecraft:is_charged"
-                       },
-                       "remove": {
-                           "component_groups": [
-                               "find_hive",
-                               "escape_fire"
-                           ]
-                       },
-                       "add": {
-                           "component_groups": [
-                               "look_for_food"
-                           ]
-                       }
+                        "filters": {
+                            "test": "has_component",
+                            "operator": "!=",
+                            "value": "minecraft:is_charged"
+                        },
+                        "remove": {
+                            "component_groups": [
+                                "find_hive",
+                                "escape_fire"
+                            ]
+                        },
+                        "add": {
+                            "component_groups": [
+                                "look_for_food"
+                            ]
+                        }
                     },
                     {
-                       "filters": {
-                           "test": "has_component",
-                           "value": "minecraft:is_charged"
-                       },
-                       "remove": {
-                           "component_groups": [
-                               "find_hive"
-                           ]
-                       },
-                       "add": {
-                           "component_groups": [
-                               "return_to_home"
-                           ]
-                       }
+                        "filters": {
+                            "test": "has_component",
+                            "value": "minecraft:is_charged"
+                        },
+                        "remove": {
+                            "component_groups": [
+                                "find_hive"
+                            ]
+                        },
+                        "add": {
+                            "component_groups": [
+                                "return_to_home"
+                            ]
+                        }
                     }
                 ]
             },
@@ -852,7 +873,7 @@
                     ]
                 }
             },
-            "countdown_to_perish_event" : {
+            "countdown_to_perish_event": {
                 "remove": {
                     "component_groups": [
                         "collect_nectar",
@@ -871,7 +892,7 @@
                     ]
                 }
             },
-            "perish_event":{
+            "perish_event": {
                 "add": {
                     "component_groups": [
                         "perish"

@@ -4,7 +4,7 @@
         "description": {
             "identifier": "better_on_bedrock:double_test"
         },
-        "age":{
+        "age": {
             "range_min": 2,
             "range_max": 2
         },

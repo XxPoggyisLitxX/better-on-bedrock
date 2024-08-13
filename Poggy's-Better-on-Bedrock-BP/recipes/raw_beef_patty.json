@@ -7,20 +7,20 @@
         "tags": [
             "crafting_table"
         ],
-          "pattern": [
+        "pattern": [
             "bd"
-          ],
-          "key": {
+        ],
+        "key": {
             "b": {
-              "item": "minecraft:beef"
+                "item": "minecraft:beef"
             },
             "d": {
-              "item": "better_on_bedrock:dagger"
+                "item": "better_on_bedrock:dagger"
             }
-          },
+        },
         "result": [
             { "item": "better_on_bedrock:beef_patty_raw" },
             { "item": "better_on_bedrock:dagger", "data": 25 }
-          ]
+        ]
     }
 }

@@ -1,4 +1,9 @@
-import { world, ItemStack,  DynamicPropertiesDefinition, ItemTypes } from "@minecraft/server";
+import {
+    DynamicPropertiesDefinition,
+    ItemStack,
+    ItemTypes,
+    world,
+} from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 
 import * as Bounties from "./constants/Bounties.js";
@@ -7,18 +12,19 @@ import * as BountyStatus from "./constants/BountyStatus.js";
 world.afterEvents.worldInitialize.subscribe(
     ({ propertyRegistry }) => {
         const playerCompShowTick = new DynamicPropertiesDefinition();
-        
-        playerCompShowTick.defineString( "bounties", 233 );
+
+        playerCompShowTick.defineString("bounties", 233);
         //wait
         //okay
-            
+
         propertyRegistry.registerEntityTypeDynamicProperties(
-            playerCompShowTick, "minecraft:player"
+            playerCompShowTick,
+            "minecraft:player",
         );
     },
 );
 
-const getFormattedStatus = ( status ) => {
+const getFormattedStatus = (status) => {
     if (status == 0) return "§dOpen";
     else if (status == 1) return "§cSearching Bounty...";
     else if (status == 2) return "§aBounty Found!";
@@ -112,7 +118,7 @@ const bounties = [
         0,
         BountyStatus.Locked,
     ],
-    
+
     [
         Bounties.WillagerSlayer,
         0,
@@ -334,100 +340,114 @@ const quests = [
 ];
 
 const functions = {
-    start: ( player, bounty ) => {
-        const savedBounties = JSON.parse(player.getDynamicProperty( "bounties" ));
+    start: (player, bounty) => {
+        const savedBounties = JSON.parse(player.getDynamicProperty("bounties"));
         const form = new ActionFormData();
-        form.title( bounty.name );
-        form.body( bounty.description + "\n§7Rewards: " + bounty.rewards );
-        form.button( "Start Hunt" );
-        form.button( "Not Now" );
-        form.show( player ).then(
+        form.title(bounty.name);
+        form.body(bounty.description + "\n§7Rewards: " + bounty.rewards);
+        form.button("Start Hunt");
+        form.button("Not Now");
+        form.show(player).then(
             (response) => {
                 switch (response?.selection) {
                     case 0:
-                        if (savedBounties.find((b) => b[2] == BountyStatus.Busy)) return player.sendMessage( "§cYou're already doing a different bounty!" );
-                        player.sendMessage( "§aBounty Accepted!" );
-                        savedBounties.find((b) => b[0] == bounty.id)[2] = BountyStatus.Busy;
+                        if (
+                            savedBounties.find((b) => b[2] == BountyStatus.Busy)
+                        ) {
+                            return player.sendMessage(
+                                "§cYou're already doing a different bounty!",
+                            );
+                        }
+                        player.sendMessage("§aBounty Accepted!");
+                        savedBounties.find((b) => b[0] == bounty.id)[2] =
+                            BountyStatus.Busy;
                         player.setDynamicProperty(
                             "bounties",
-                            JSON.stringify( savedBounties ),
+                            JSON.stringify(savedBounties),
                         );
-                    break;
-                };
+                        break;
+                }
             },
         );
     },
-    about: ( player, bounty ) => {
+    about: (player, bounty) => {
         const form = new ActionFormData();
-        form.title( bounty.name );
-        form.body( bounty.description + "\n§7Rewards: " + bounty.rewards );
-        form.button( "Got It!" );
-        form.show( player );
+        form.title(bounty.name);
+        form.body(bounty.description + "\n§7Rewards: " + bounty.rewards);
+        form.button("Got It!");
+        form.show(player);
     },
-    claim: ( player, bounty ) => {
-        const savedBounties = JSON.parse(player.getDynamicProperty( "bounties" ));
+    claim: (player, bounty) => {
+        const savedBounties = JSON.parse(player.getDynamicProperty("bounties"));
         const form = new ActionFormData();
-        form.title( bounty.name );
-        form.body( "Bounty completed, claim your reward!\n§7Rewards: " + bounty.rewards );
-        form.button( "Claim!" );
-        form.show( player ).then(
+        form.title(bounty.name);
+        form.body(
+            "Bounty completed, claim your reward!\n§7Rewards: " +
+                bounty.rewards,
+        );
+        form.button("Claim!");
+        form.show(player).then(
             (response) => {
                 switch (response?.selection) {
                     case 0:
-                        const savedBounty = savedBounties.find((b) => b[0] == bounty.id);
+                        const savedBounty = savedBounties.find((b) =>
+                            b[0] == bounty.id
+                        );
                         const b = quests.find((b) => b.id == bounty.id);
                         if (savedBounty[2] != BountyStatus.Claimed) {
                             for (const command of b.commands) {
-                                player.runCommandAsync( command );
-                            };
+                                player.runCommandAsync(command);
+                            }
 
                             savedBounty[2] = BountyStatus.Claimed;
                             player.setDynamicProperty(
                                 "bounties",
-                                JSON.stringify( savedBounties ),
+                                JSON.stringify(savedBounties),
                             );
-                        };
-                    break;
-                };
+                        }
+                        break;
+                }
             },
         );
     },
 };
-//Ssend the line here of how the dps are saved 
+//Ssend the line here of how the dps are saved
 //"[{\"id\":0,\"p\":0,\"s\":0},{\"id\":1,\"p\":0,\"s\":0},{\"id\":2,\"p\":0,\"s\":0},{\"id\":3,\"p\":0,\"s\":0}]"
-export const bounty_tier_page = ( player ) => {
-    let savedBounties = JSON.parse(player.getDynamicProperty( "bounties" ));
+export const bounty_tier_page = (player) => {
+    let savedBounties = JSON.parse(player.getDynamicProperty("bounties"));
     for (const savedBounty of savedBounties) {
         if (!quests.find((q) => q.id == savedBounty[0])) {
             savedBounties = savedBounties.filter((q) => q[0] != savedBounty[0]);
-        };
-    };
-    
+        }
+    }
+
     player.setDynamicProperty(
         "bounties",
-        JSON.stringify( savedBounties ),
+        JSON.stringify(savedBounties),
     );
-    
+
     const form = new ActionFormData();
-    form.title( "§fBounties" );
-    form.body( "Welcome to the bounty screen. Select an exisitng bounty, or a newly unlocked bounty and follow the instructions. Each bounty will have a difficulty indicated by 'I, II, III, IV, V'." );
-    
+    form.title("§fBounties");
+    form.body(
+        "Welcome to the bounty screen. Select an exisitng bounty, or a newly unlocked bounty and follow the instructions. Each bounty will have a difficulty indicated by 'I, II, III, IV, V'.",
+    );
+
     for (const questO of quests) {
         const quest = savedBounties.find((b) => b[0] == questO.id);
         const questStatus = getFormattedStatus(quest[2]);
-        
+
         form.button(
             (
-                quest[2] == BountyStatus.Open
-                || quest[2] == BountyStatus.Claimed
-                || quest[2] == BountyStatus.Locked
+                quest[2] == BountyStatus.Open ||
+                    quest[2] == BountyStatus.Claimed ||
+                    quest[2] == BountyStatus.Locked
                     ? "§7"
                     : "§f"
-            )
-            + questO.name + " - " + questStatus,
-            questO.icon
+            ) +
+                questO.name + " - " + questStatus,
+            questO.icon,
         );
-        
+
         /*form.button('Zombie Hunter III') done
         form.button('Phantom Hunter IV') done/added to consts
         form.button('Deer Hunter II') done/added to consts
@@ -441,38 +461,45 @@ export const bounty_tier_page = ( player ) => {
         form.button('Witch Hunter II') done/added to consts
         form.button('Evoker Hunter IV') done/added to consts
         form.button('Ravanger Hunter III') done/added to consts*/
-    };
-    
-    form.show( player ).then(
+    }
+
+    form.show(player).then(
         (response) => {
             if (response.canceled) return;
 
-            const bounty = savedBounties.find((b) => b[0] == response.selection);
+            const bounty = savedBounties.find((b) =>
+                b[0] == response.selection
+            );
             const b = quests.find((b) => b.id == response.selection);
-            
-            if (bounty[2] == BountyStatus.Open) functions.start( player, b );
-            else if (bounty[2] == BountyStatus.Busy) functions.about( player, b );
-            else if (bounty[2] == BountyStatus.Completed) functions.claim( player, b );
-            else if (bounty[2] == BountyStatus.Locked) player.sendMessage( "§cThis Bounty is locked!" );
+
+            if (bounty[2] == BountyStatus.Open) functions.start(player, b);
+            else if (bounty[2] == BountyStatus.Busy) functions.about(player, b);
+            else if (bounty[2] == BountyStatus.Completed) {
+                functions.claim(player, b);
+            } else if (bounty[2] == BountyStatus.Locked) {
+                player.sendMessage("§cThis Bounty is locked!");
+            }
         },
     );
 };
-world.afterEvents.itemUse.subscribe(data => {
-    let { source: player } = data
-  
-      let invi = player.getComponent("inventory").container;
-      let items = invi.getItem(player.selectedSlot);
-      //this spawns the entity with a tag with the player name when the player does not have tag 'backpack1'
-      if (items?.typeId == "better_on_bedrock:quest_scroll_closed"){
-          player.runCommandAsync("replaceitem entity @s slot.weapon.mainhand 0 better_on_bedrock:quest_scroll_opened")
-  }
-  if (items?.typeId == "better_on_bedrock:quest_scroll_opened"){
-    if (!player.getDynamicProperty( "bounties" )) {
-        player.setDynamicProperty(
-            "bounties",
-            JSON.stringify( bounties ),
+world.afterEvents.itemUse.subscribe((data) => {
+    let { source: player } = data;
+
+    let invi = player.getComponent("inventory").container;
+    let items = invi.getItem(player.selectedSlot);
+    //this spawns the entity with a tag with the player name when the player does not have tag 'backpack1'
+    if (items?.typeId == "better_on_bedrock:quest_scroll_closed") {
+        player.runCommandAsync(
+            "replaceitem entity @s slot.weapon.mainhand 0 better_on_bedrock:quest_scroll_opened",
         );
-    };
-      bounty_tier_page( player )
-  }
-  })
+    }
+    if (items?.typeId == "better_on_bedrock:quest_scroll_opened") {
+        if (!player.getDynamicProperty("bounties")) {
+            player.setDynamicProperty(
+                "bounties",
+                JSON.stringify(bounties),
+            );
+        }
+        bounty_tier_page(player);
+    }
+});
